@@ -15,7 +15,7 @@ export const experiences: Experience[] = [
       'Built responsive applications with Angular 14+ and React 18 using NgRx and Redux for state management',
       'Implemented cloud-native deployment on Azure AKS with Docker containerization and CI/CD pipelines',
       'Achieved 99.9% uptime through comprehensive observability framework and circuit breaker patterns',
-      'Reduced production defects by 85% through automated testing with JUnit, Cypress, and Selenium',
+      'Reduced production defects by 85% through automated testing with JUnit and Selenium',
       'Improved page load times by 45% through frontend performance optimization and bundle optimization',
       'Reduced code duplication by 60% through custom Angular directives and React hooks',
     ],
@@ -36,7 +36,7 @@ export const experiences: Experience[] = [
       'Created real-time dashboards for payroll analytics using D3.js and Chart.js',
       'Reduced processing latency by 30% through Spring Batch optimization and custom schedulers',
       'Enhanced API response times by 40% using MongoDB optimization and Redis caching strategies',
-      'Developed comprehensive test automation suites covering unit, integration, and regression testing',
+      'Developed test automation suites covering unit and integration testing',
     ],
   },
   {
