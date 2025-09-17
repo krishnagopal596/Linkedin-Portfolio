@@ -18,7 +18,7 @@ export default function About() {
             About Me
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Software Engineer & Computer Science Graduate Student at Iowa State University
+            Experienced Full-stack Java Developer with 4+ years of hands-on experience
           </p>
         </motion.div>
 
@@ -34,13 +34,13 @@ export default function About() {
               Professional Summary
             </h3>
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-              I build reliable backend systems and practical interfaces that turn complex data into useful products. 
-              I care about secure design, clear ownership, and shipping work that helps users.
+              Experienced Full-stack Java developer with expertise in front-end and back-end technologies across 
+              insurance, payroll, and ERP domains. Proficient in Java, Spring Boot, Angular, React, and modern cloud technologies.
             </p>
             <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-              Currently pursuing my Master's in Computer Science at <strong className="text-primary-600 dark:text-primary-400">Iowa State University</strong> with a 3.7 GPA, 
-              graduating August 2025. Previously worked as a Software Developer at ADP and completed internships at Mindtree and Cognizant. 
-              I enjoy learning in collaborative teams and building products that are easy to use and maintain.
+              Currently pursuing Master's in Computer Science at <strong className="text-primary-600 dark:text-primary-400">Iowa State University</strong> with a 3.7 GPA, 
+              graduating in 2025. Professional experience includes developing enterprise microservices platforms, implementing cloud-native 
+              deployments, and building responsive web applications with modern frameworks and comprehensive testing strategies.
             </p>
           </motion.div>
 
@@ -58,19 +58,19 @@ export default function About() {
               <div>
                 <h4 className="font-semibold text-gray-900 dark:text-white mb-3">Technical Impact</h4>
                 <ul className="space-y-2 text-gray-600 dark:text-gray-300">
-                  <li>• Reduced API latency and increased service scalability for payroll systems at ADP</li>
-                  <li>• Migrated synchronous workflows to event-driven services with Kafka and Kubernetes</li>
-                  <li>• Built authentication service with Spring Boot, PostgreSQL, and Spring Security</li>
-                  <li>• Delivered dashboards in React for internal stakeholders</li>
+                  <li>• Achieved 99.9% uptime through comprehensive observability framework and circuit breaker patterns</li>
+                  <li>• Reduced production defects by 85% through automated testing with JUnit, Cypress, and Selenium</li>
+                  <li>• Improved page load times by 45% through frontend performance optimization</li>
+                  <li>• Enhanced API response times by 40% using MongoDB optimization and Redis caching</li>
                 </ul>
               </div>
               <div>
-                <h4 className="font-semibold text-gray-900 dark:text-white mb-3">Research & Development</h4>
+                <h4 className="font-semibold text-gray-900 dark:text-white mb-3">Technology Expertise</h4>
                 <ul className="space-y-2 text-gray-600 dark:text-gray-300">
-                  <li>• IEEE publication on RFID encryption security</li>
-                  <li>• Real-time motion retargeting for humanoid robotics</li>
-                  <li>• Cloud-native authentication systems</li>
-                  <li>• Global Scholars Award recipient</li>
+                  <li>• Enterprise microservices platforms using Spring Boot and Hibernate/JPA</li>
+                  <li>• Cloud-native deployments on Azure AKS with Docker and Kubernetes</li>
+                  <li>• Cross-disciplinary expertise in computer vision and cryptographic systems</li>
+                  <li>• Event-driven architecture with Apache Kafka and message queuing</li>
                 </ul>
               </div>
             </div>
@@ -96,7 +96,7 @@ export default function About() {
                     Iowa State University
                   </p>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Expected Graduation: August 2025 • GPA: 3.7/4.0
+                    2023 - 2025 • GPA: 3.7/4.0
                   </p>
                 </div>
                 <a

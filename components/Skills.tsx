@@ -9,23 +9,23 @@ const skillCategories = [
     icon: Code,
     skills: [
       { name: 'Java', level: 95 },
-      { name: 'Python', level: 90 },
-      { name: 'JavaScript', level: 85 },
-      { name: 'TypeScript', level: 80 },
+      { name: 'JavaScript', level: 90 },
+      { name: 'TypeScript', level: 90 },
       { name: 'SQL', level: 90 },
-      { name: 'Shell Scripting', level: 75 },
+      { name: 'HTML5', level: 85 },
+      { name: 'CSS3', level: 85 },
     ],
   },
   {
-    title: 'Frameworks & Libraries',
+    title: 'Enterprise Frameworks',
     icon: Code,
     skills: [
       { name: 'Spring Boot', level: 95 },
-      { name: 'Hibernate', level: 90 },
+      { name: 'Spring Security', level: 90 },
+      { name: 'Hibernate/JPA', level: 90 },
+      { name: 'Angular', level: 90 },
       { name: 'React', level: 85 },
-      { name: 'Node.js', level: 80 },
-      { name: 'Django', level: 75 },
-      { name: 'Flask', level: 70 },
+      { name: 'RESTful APIs', level: 95 },
     ],
   },
   {
@@ -33,47 +33,47 @@ const skillCategories = [
     icon: Cloud,
     skills: [
       { name: 'AWS', level: 85 },
+      { name: 'Azure AKS', level: 80 },
       { name: 'Docker', level: 90 },
-      { name: 'Kubernetes', level: 80 },
+      { name: 'Kubernetes', level: 85 },
       { name: 'Jenkins', level: 85 },
       { name: 'GitHub Actions', level: 80 },
-      { name: 'Terraform', level: 70 },
     ],
   },
   {
-    title: 'Databases & Messaging',
+    title: 'Database Technologies',
     icon: Database,
     skills: [
       { name: 'PostgreSQL', level: 90 },
-      { name: 'MySQL', level: 85 },
+      { name: 'Oracle', level: 85 },
       { name: 'MongoDB', level: 80 },
-      { name: 'Redis', level: 75 },
-      { name: 'Kafka', level: 85 },
-      { name: 'SAP BODS', level: 80 },
+      { name: 'Redis', level: 85 },
+      { name: 'Apache Kafka', level: 85 },
+      { name: 'PL/SQL', level: 80 },
     ],
   },
   {
-    title: 'Testing & Security',
+    title: 'Testing & Quality Assurance',
     icon: Shield,
     skills: [
       { name: 'JUnit', level: 90 },
       { name: 'Mockito', level: 85 },
+      { name: 'Cypress', level: 85 },
+      { name: 'Selenium WebDriver', level: 85 },
+      { name: 'TestNG', level: 80 },
       { name: 'Postman', level: 90 },
-      { name: 'Swagger', level: 80 },
-      { name: 'RBAC', level: 85 },
-      { name: 'JWT', level: 90 },
     ],
   },
   {
-    title: 'AI & Computer Vision',
-    icon: Brain,
+    title: 'Security & Authentication',
+    icon: Shield,
     skills: [
-      { name: 'OpenCV', level: 85 },
-      { name: 'MediaPipe', level: 80 },
-      { name: 'TensorFlow', level: 75 },
-      { name: 'Scikit-learn', level: 70 },
-      { name: 'Matplotlib', level: 85 },
-      { name: 'Pygame', level: 80 },
+      { name: 'OAuth2', level: 90 },
+      { name: 'JWT', level: 90 },
+      { name: 'SSO', level: 85 },
+      { name: 'Spring Security', level: 90 },
+      { name: 'API Security', level: 85 },
+      { name: 'Data Encryption', level: 80 },
     ],
   },
 ]
@@ -143,28 +143,28 @@ export default function Skills() {
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">Technical Skills Summary</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm text-gray-700 dark:text-gray-300">
             <div>
-              <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Languages</h4>
-              <p>Java, Python, JavaScript, TypeScript, SQL, Shell Scripting</p>
+              <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Programming Languages</h4>
+              <p>Java, JavaScript, TypeScript, Python, SQL, HTML5, CSS3, C++, Ruby</p>
             </div>
             <div>
-              <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Frameworks</h4>
-              <p>Spring Boot, Hibernate, Django, Flask, Node.js, React</p>
+              <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Enterprise Frameworks</h4>
+              <p>Spring Boot, Spring Security, Spring MVC, Hibernate/JPA, Angular, React, Node.js, RESTful APIs, Microservices</p>
             </div>
             <div>
-              <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Cloud and DevOps</h4>
-              <p>AWS, Docker, Kubernetes, Terraform, Jenkins, GitHub Actions</p>
+              <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Cloud & DevOps</h4>
+              <p>AWS (EC2, S3, RDS, Lambda, CloudWatch), Azure (AKS, App Service), Docker, Kubernetes, Jenkins, GitHub Actions, CI/CD</p>
             </div>
             <div>
-              <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Databases and Messaging</h4>
-              <p>PostgreSQL, MySQL, MongoDB, SQL Server, Redis, Kafka, SAP BODS</p>
+              <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Database Technologies</h4>
+              <p>PostgreSQL, MySQL, MongoDB, Oracle, Redis, SQL Server, Apache Kafka, Database Design, Query Optimization</p>
             </div>
             <div>
-              <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Testing and Security</h4>
-              <p>JUnit, Mockito, Postman, Swagger, Secure SDLC, RBAC, JWT</p>
+              <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Testing & Quality Assurance</h4>
+              <p>JUnit, Mockito, Cypress, Selenium, TestNG, Test-Driven Development, Integration Testing, Performance Testing</p>
             </div>
             <div>
-              <h4 className="font-semibold text-gray-900 dark:text-white mb-2">AI and Vision</h4>
-              <p>TensorFlow, Scikit-learn, OpenCV, MediaPipe, Matplotlib, Pygame</p>
+              <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Security & Authentication</h4>
+              <p>OAuth 2.0, JWT, Spring Security, SSO, RBAC, API Security, Data Encryption, Secure SDLC</p>
             </div>
           </div>
         </motion.div>

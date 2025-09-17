@@ -24,7 +24,7 @@ export default function Hero() {
             Krishna Gopal Madhavaram
           </h1>
           <h2 className="text-2xl md:text-3xl font-semibold text-primary-600 dark:text-primary-400 mb-4">
-            Software Engineer & Computer Science Graduate Student at Iowa State University
+            Full-Stack Java Developer & Computer Science Graduate
           </h2>
         </motion.div>
 
@@ -35,8 +35,8 @@ export default function Hero() {
           className="mb-8"
         >
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Building reliable backend systems and practical interfaces that turn complex data into useful products. 
-            Specializing in Java microservices, cloud infrastructure, and robotics applications.
+            Experienced in developing enterprise microservices platforms and responsive web applications. 
+            Specializing in Java, Spring Boot, Angular, React, and cloud-native deployments with 4+ years of hands-on experience.
           </p>
         </motion.div>
 
