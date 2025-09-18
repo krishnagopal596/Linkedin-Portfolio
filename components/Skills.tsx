@@ -57,8 +57,7 @@ const skillCategories = [
     icon: Shield,
     skills: [
       { name: 'JUnit', level: 90 },
-      { name: 'Unit Testing', level: 90 },
-      { name: 'Integration Testing', level: 85 },
+      { name: 'Mockito', level: 85 },
       { name: 'Postman', level: 90 },
       { name: 'Swagger', level: 80 },
       { name: 'RBAC', level: 85 },
@@ -161,7 +160,7 @@ export default function Skills() {
             </div>
             <div>
               <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Testing and Security</h4>
-              <p>JUnit, Unit Testing, Integration Testing, Postman, Swagger, Secure SDLC, RBAC, JWT</p>
+              <p>JUnit, Mockito, Postman, Swagger, Secure SDLC, RBAC, JWT</p>
             </div>
             <div>
               <h4 className="font-semibold text-gray-900 dark:text-white mb-2">AI and Vision</h4>
