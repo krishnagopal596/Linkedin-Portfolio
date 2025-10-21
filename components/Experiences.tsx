@@ -355,7 +355,7 @@ export default function Experiences() {
                   Let's Connect
                 </a>
                 <a
-                  href="/resume.pdf"
+                  href="/Krishna_Madhavaram_Resume_JFS.docx"
                   download
                   className="inline-flex items-center px-8 py-4 bg-white/10 text-white rounded-xl hover:bg-white/20 transition-all duration-200 font-semibold border border-white/20"
                 >

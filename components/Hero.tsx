@@ -24,7 +24,7 @@ export default function Hero() {
             Krishna Gopal Madhavaram
           </h1>
           <h2 className="text-2xl md:text-3xl font-semibold text-primary-600 dark:text-primary-400 mb-4">
-            Full-Stack Java Developer & Computer Science Graduate
+            Java Full Stack Developer at State Farm & Computer Science Graduate
           </h2>
         </motion.div>
 
@@ -35,7 +35,7 @@ export default function Hero() {
           className="mb-8"
         >
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Experienced in developing enterprise microservices platforms and responsive web applications. 
+            Currently developing enterprise microservices platforms at State Farm Insurance. 
             Specializing in Java, Spring Boot, Angular, React, and cloud-native deployments with 4+ years of hands-on experience.
           </p>
         </motion.div>
@@ -47,7 +47,7 @@ export default function Hero() {
           className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
         >
           <a
-            href="/resume.pdf"
+            href="/Krishna_Madhavaram_Resume_JFS.docx"
             download
             className="inline-flex items-center space-x-2 px-8 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors duration-200 font-semibold shadow-lg"
           >

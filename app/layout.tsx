@@ -7,20 +7,20 @@ import ThemeToggle from '../components/ThemeToggle'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Krishna Gopal Madhavaram - Full-Stack Java Developer',
-  description: 'Experienced Full-stack Java Developer with 4+ years of hands-on experience in enterprise microservices, Spring Boot, Angular, React, and cloud-native deployments.',
-  keywords: ['Full-Stack Java Developer', 'Spring Boot', 'Angular', 'React', 'Microservices', 'Cloud Native', 'Enterprise Development', 'Java', 'TypeScript'],
+  title: 'Krishna Gopal Madhavaram - Java Full Stack Developer at State Farm',
+  description: 'Java Full Stack Developer at State Farm Insurance with 4+ years of hands-on experience in enterprise microservices, Spring Boot, Angular, React, and cloud-native deployments.',
+  keywords: ['Java Full Stack Developer', 'State Farm', 'Spring Boot', 'Angular', 'React', 'Microservices', 'Cloud Native', 'Enterprise Development', 'Java', 'TypeScript'],
   authors: [{ name: 'Krishna Gopal Madhavaram' }],
   openGraph: {
-    title: 'Krishna Gopal Madhavaram - Full-Stack Java Developer',
-    description: 'Experienced Full-stack Java Developer with 4+ years of hands-on experience in enterprise microservices and cloud-native deployments.',
+    title: 'Krishna Gopal Madhavaram - Java Full Stack Developer at State Farm',
+    description: 'Java Full Stack Developer at State Farm Insurance with 4+ years of hands-on experience in enterprise microservices and cloud-native deployments.',
     type: 'website',
-    url: 'https://krishna-portfolio.vercel.app',
+    url: 'https://krishnagopal596.github.io/Linkedin-Portfolio',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Krishna Gopal Madhavaram - Full-Stack Java Developer',
-    description: 'Experienced Full-stack Java Developer with 4+ years of hands-on experience in enterprise microservices and cloud-native deployments.',
+    title: 'Krishna Gopal Madhavaram - Java Full Stack Developer at State Farm',
+    description: 'Java Full Stack Developer at State Farm Insurance with 4+ years of hands-on experience in enterprise microservices and cloud-native deployments.',
   },
 }
 

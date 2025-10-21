@@ -59,7 +59,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 dark:text-white">Location</h4>
-                    <p className="text-gray-600 dark:text-gray-300">Ames, Iowa, United States</p>
+                    <p className="text-gray-600 dark:text-gray-300">Bloomington, Illinois, United States</p>
                   </div>
                 </div>
 
@@ -69,7 +69,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 dark:text-white">Work Authorization</h4>
-                    <p className="text-gray-600 dark:text-gray-300">F-1 OPT (Available September 2025)</p>
+                    <p className="text-gray-600 dark:text-gray-300">F-1 OPT (Available August 2025)</p>
                   </div>
                 </div>
               </div>
@@ -140,9 +140,9 @@ export default function Contact() {
                 Ready to Collaborate?
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-                I'm currently seeking full-time opportunities in software engineering, 
-                particularly in backend development, cloud infrastructure, and robotics. 
-                Let's discuss how we can work together!
+                I'm currently working at State Farm while completing my Master's degree. 
+                Open to discussing new opportunities in software engineering, particularly in backend development, cloud infrastructure, and robotics. 
+                Let's connect and explore potential collaborations!
               </p>
               <a
                 href="mailto:krishnagopal596@gmail.com?subject=Portfolio Contact - Let's Connect"
