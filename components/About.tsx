@@ -35,12 +35,12 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16"
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12"
         >
           {[
             { number: 4, suffix: '+', label: 'Years Experience', color: 'blue', icon: '💼' },
             { number: 3.7, suffix: '', label: 'GPA', color: 'green', icon: '🎓' },
-            { number: 3, suffix: '+', label: 'Companies', color: 'purple', icon: '🏢' },
+            { number: 3, suffix: '', label: 'Companies', color: 'purple', icon: '🏢' },
             { number: 1, suffix: '', label: 'IEEE Paper', color: 'orange', icon: '📄' }
           ].map((stat, index) => (
             <motion.div
@@ -129,14 +129,9 @@ export default function About() {
               <Briefcase className="w-6 h-6 mr-3 text-primary-600" />
               Professional Summary
             </h3>
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-              I build reliable backend systems and practical interfaces that turn complex data into useful products. 
-              I care about secure design, clear ownership, and shipping work that helps users.
-            </p>
-            <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-              Currently working as a Java Full Stack Developer at <strong className="text-primary-600 dark:text-primary-400">State Farm Insurance</strong> while pursuing my Master's in Computer Science at <strong className="text-primary-600 dark:text-primary-400">Iowa State University</strong> with a 3.7 GPA, 
-              graduating August 2025. Previously worked as a Software Developer at ADP and completed internships at Mindtree and Cognizant. 
-              I enjoy learning in collaborative teams and building products that are easy to use and maintain.
+            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+              Java Full Stack Developer specializing in GenAI solutions with 4+ years building enterprise applications for insurance and payroll sectors. 
+              Currently developing RAG-powered microservices at <strong className="text-primary-600 dark:text-primary-400">State Farm Insurance</strong> while pursuing Master's in Computer Science at <strong className="text-primary-600 dark:text-primary-400">Iowa State University</strong> (GPA: 3.7/4.0).
             </p>
           </motion.div>
 
@@ -151,37 +146,37 @@ export default function About() {
               <Award className="w-6 h-6 mr-3 text-primary-600" />
               Key Achievements
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
+                {
+                  title: "GenAI Integration",
+                  icon: "🤖",
+                  description: "10K+ claims daily with 95%+ accuracy",
+                  details: "Built RAG pipelines with Spring AI and LangChain4j"
+                },
                 {
                   title: "Performance Optimization",
                   icon: "⚡",
-                  description: "Reduced API latency by 40%",
-                  details: "Implemented caching strategies and query optimization"
+                  description: "60% performance improvement",
+                  details: "Optimized queries and implemented caching strategies"
                 },
                 {
-                  title: "Microservices Migration",
+                  title: "Microservices Architecture",
                   icon: "🔄",
-                  description: "Event-driven architecture",
-                  details: "Migrated to Kafka and Kubernetes for scalability"
+                  description: "15+ microservices, 40% latency reduction",
+                  details: "Event-driven architecture with Kafka and Kubernetes"
                 },
                 {
-                  title: "Security Implementation",
+                  title: "Code Quality",
                   icon: "🔐",
-                  description: "OAuth2 & JWT authentication",
-                  details: "Built secure authentication services with Spring Security"
+                  description: "85%+ code coverage, 30% fewer incidents",
+                  details: "TDD practices with JUnit, Mockito, and SonarQube"
                 },
                 {
                   title: "Research Publication",
                   icon: "📚",
                   description: "IEEE paper published",
                   details: "RFID encryption security research"
-                },
-                {
-                  title: "Robotics Innovation",
-                  icon: "🤖",
-                  description: "Motion retargeting system",
-                  details: "Real-time humanoid robotics algorithms"
                 },
                 {
                   title: "Academic Excellence",
@@ -225,9 +220,9 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="bg-gradient-to-r from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 rounded-2xl p-8 mb-8"
+            className="bg-gradient-to-r from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 rounded-2xl p-6 mb-8"
           >
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center">
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center">
               <Calendar className="w-6 h-6 mr-3 text-primary-600" />
               Career Journey
             </h3>
@@ -236,30 +231,30 @@ export default function About() {
               {[
                 {
                   year: 'June 2024 - Present',
-                  title: 'Java Full Stack Developer',
+                  title: 'Java Full Stack Engineer',
                   company: 'State Farm Insurance',
                   location: 'Bloomington, IL',
-                  description: 'Enterprise microservices & cloud-native applications',
+                  description: 'GenAI-powered microservices & RAG pipelines',
                   icon: '🏢',
-                  highlights: ['Spring Boot', 'Angular', 'AWS', 'Kubernetes']
+                  highlights: ['Spring AI', 'LangChain4j', 'RAG', 'Kafka']
                 },
                 {
                   year: 'June 2022 - Aug 2023',
-                  title: 'Java Backend Developer',
+                  title: 'Java Full Stack Developer',
                   company: 'ADP',
                   location: 'Hyderabad, India',
-                  description: 'ERP Modernization & Lien Management System',
+                  description: 'ERP Modernization & Payroll Processing',
                   icon: '💼',
                   highlights: ['Microservices', 'Kafka', 'React', 'MongoDB']
                 },
                 {
                   year: 'July 2020 - May 2022',
                   title: 'Java Full Stack Developer',
-                  company: 'Life Insurance Corporation of India',
+                  company: 'LTI Mindtree',
                   location: 'Hyderabad, India',
-                  description: 'Insurance ERP Policy & Payment Management',
+                  description: 'Insurance Policy Servicing & Billing',
                   icon: '🏦',
-                  highlights: ['Spring MVC', 'Oracle', 'Angular', 'Docker']
+                  highlights: ['Spring Boot', 'Oracle', 'Angular', 'Microservices']
                 }
               ].map((item, index) => (
                 <motion.div
@@ -267,43 +262,43 @@ export default function About() {
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.2 }}
+                  transition={{ duration: 0.5, delay: index * 0.15 }}
                   whileHover={{ scale: 1.02 }}
-                  className="relative flex items-start mb-8 last:mb-0 group cursor-pointer"
+                  className="relative flex items-start mb-6 last:mb-0 group cursor-pointer"
                 >
                   <motion.div 
                     whileHover={{ scale: 1.2 }}
                     className="absolute left-3 w-3 h-3 bg-primary-600 rounded-full border-4 border-white dark:border-gray-800 shadow-lg z-10"
                   ></motion.div>
-                  <div className="ml-8 bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-xl transition-all duration-300 flex-1 group-hover:border-primary-200 dark:group-hover:border-primary-700 border border-gray-200 dark:border-gray-700">
-                    <div className="flex items-start justify-between mb-3">
+                  <div className="ml-8 bg-white dark:bg-gray-800 rounded-lg p-5 shadow-md hover:shadow-xl transition-all duration-300 flex-1 group-hover:border-primary-200 dark:group-hover:border-primary-700 border border-gray-200 dark:border-gray-700">
+                    <div className="flex items-start justify-between mb-2">
                       <div className="flex items-center">
-                        <span className="text-2xl mr-3 group-hover:scale-110 transition-transform duration-300">
+                        <span className="text-xl mr-3 group-hover:scale-110 transition-transform duration-300">
                           {item.icon}
                         </span>
                         <div>
                           <h4 className="font-semibold text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
                             {item.title}
                           </h4>
-                          <p className="text-primary-600 dark:text-primary-400 font-medium">
+                          <p className="text-primary-600 dark:text-primary-400 font-medium text-sm">
                             {item.company}
                           </p>
                         </div>
                       </div>
-                      <div className="flex items-center text-sm text-gray-500 dark:text-gray-400">
-                        <MapPin className="w-4 h-4 mr-1" />
+                      <div className="flex items-center text-xs text-gray-500 dark:text-gray-400">
+                        <MapPin className="w-3 h-3 mr-1" />
                         {item.location}
                       </div>
                     </div>
-                    <p className="text-gray-600 dark:text-gray-300 text-sm mb-3">{item.description}</p>
-                    <div className="flex flex-wrap gap-2 mb-3">
+                    <p className="text-gray-600 dark:text-gray-300 text-sm mb-2">{item.description}</p>
+                    <div className="flex flex-wrap gap-1.5 mb-2">
                       {item.highlights.map((highlight, idx) => (
-                        <span key={idx} className="px-2 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 text-xs rounded-full">
+                        <span key={idx} className="px-2 py-0.5 bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 text-xs rounded-full">
                           {highlight}
                         </span>
                       ))}
                     </div>
-                    <span className="inline-block bg-primary-100 dark:bg-primary-900/30 text-primary-800 dark:text-primary-300 px-3 py-1 rounded-full text-xs font-medium group-hover:bg-primary-200 dark:group-hover:bg-primary-800/50 transition-colors">
+                    <span className="inline-block bg-primary-100 dark:bg-primary-900/30 text-primary-800 dark:text-primary-300 px-2 py-0.5 rounded-full text-xs font-medium group-hover:bg-primary-200 dark:group-hover:bg-primary-800/50 transition-colors">
                       {item.year}
                     </span>
                   </div>

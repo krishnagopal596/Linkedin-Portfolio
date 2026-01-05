@@ -6,7 +6,7 @@ export const projects: Project[] = [
   {
     title: 'Real-Time Motion Retargeting for 14-DoF Humanoid',
     description:
-      'Maps 3D upper-body poses (MediaPipe, OpenCV) to a Unitree G1 via an analytical inverse-kinematics solver for shoulder/elbow/wrist. Added smoothing and velocity limits for stable jabs/blocks, plus live 3D debugging (Matplotlib, Pygame) and lightweight action classification (Scikit-learn).',
+      'Real-time human pose mapping system that translates 3D upper-body movements to robot control signals using inverse kinematics.',
     technologies: [
       'Python',
       'OpenCV',
@@ -26,7 +26,7 @@ export const projects: Project[] = [
   {
     title: 'Cloud-Native Enterprise Authentication Service',
     description:
-      'Spring Boot + PostgreSQL service for registration/login and role-based access with Spring Security/JWT. Designed as a modular microservice, containerized and deployable on Kubernetes for straightforward scaling and maintenance.',
+      'Scalable authentication microservice with JWT-based access control, containerized for Kubernetes deployment.',
     technologies: [
       'Java',
       'Spring Boot',
@@ -46,7 +46,7 @@ export const projects: Project[] = [
   {
     title: 'Hospital Management System & Employee Portal',
     description:
-      'Spring Boot services tuned with MySQL and Redis caching; React/Angular dashboards reduced manual workflows and improved stakeholder visibility. Emphasis on clean API design and reliable data flows.',
+      'Full-stack healthcare management platform with real-time dashboards and automated workflow processing.',
     technologies: [
       'Spring Boot',
       'MySQL',
@@ -66,7 +66,7 @@ export const projects: Project[] = [
   {
     title: 'Interactive Portfolio Analytics Dashboard',
     description:
-      'React SPA that streams real-time data (WebSocket), manages state with Redux, and renders readable charts (Chart.js). Bundle split and lazy loading to keep interactions snappy.',
+      'Real-time analytics dashboard with WebSocket streaming and interactive data visualization.',
     technologies: [
       'React',
       'WebSocket',
@@ -86,7 +86,7 @@ export const projects: Project[] = [
   {
     title: 'Augmented Entities for E-Learning (Web AR)',
     description:
-      'Browser-based AR that places glTF models into real scenes using React + Three.js/WebGL/WebXR. Includes annotation, simple interactions, and asset optimizations for smooth classroom use.',
+      'Browser-based AR platform for interactive 3D learning experiences using WebXR.',
     technologies: [
       'React',
       'Three.js',
@@ -105,7 +105,7 @@ export const projects: Project[] = [
   {
     title: 'ROS2 TurtleBot3 Simulation',
     description:
-      'Dockerized ROS 2 workspace to reproduce navigation/control experiments without hardware, useful for quick iteration and demos.',
+      'Dockerized ROS 2 workspace for robotics simulation and navigation testing.',
     technologies: [
       'ROS2',
       'Docker',
@@ -123,7 +123,7 @@ export const projects: Project[] = [
   {
     title: 'AWS User Interface',
     description:
-      'React front end with a Python backend to list and trigger common EC2/S3/Lambda operations, simplifying day-to-day cloud tasks.',
+      'Web interface for managing AWS resources (EC2, S3, Lambda) with simplified operations.',
     technologies: [
       'React',
       'Python',
@@ -142,7 +142,7 @@ export const projects: Project[] = [
   {
     title: 'Employee-Certification-UI',
     description:
-      'Front-end for an internal certification portal with status tracking and responsive layouts for different roles.',
+      'Internal certification portal with role-based access and status tracking.',
     technologies: [
       'React',
       'JavaScript',
@@ -161,7 +161,7 @@ export const projects: Project[] = [
   {
     title: 'RFID Encryption',
     description:
-      'Prototype of a secure RFID access workflow with encrypted tag data and periodic key rotation to protect credentials at rest and in transit.',
+      'Secure RFID access system with encrypted credentials and automated key rotation.',
     technologies: [
       'Arduino',
       'AES-128',
@@ -181,7 +181,7 @@ export const projects: Project[] = [
   {
     title: 'Secure Hash Algorithms Suite',
     description:
-      'Java/Python utilities combining SHA-256 (integrity), RSA (key exchange/signatures), and AES (symmetric encryption) with examples and tests.',
+      'Cryptographic utilities combining SHA-256, RSA, and AES for secure data transmission.',
     technologies: [
       'Java',
       'Python',
@@ -202,7 +202,7 @@ export const projects: Project[] = [
   {
     title: 'URL Slicer',
     description:
-      'Tiny utility that breaks URLs into scheme/host/path/query components for debugging and preprocessing.',
+      'Lightweight URL parsing utility for debugging and preprocessing workflows.',
     technologies: [
       'Python',
       'URL Parsing',

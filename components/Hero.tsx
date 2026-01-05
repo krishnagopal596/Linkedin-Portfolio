@@ -24,7 +24,7 @@ export default function Hero() {
             Krishna Gopal Madhavaram
           </h1>
           <h2 className="text-2xl md:text-3xl font-semibold text-primary-600 dark:text-primary-400 mb-4">
-            Java Full Stack Developer at State Farm & Computer Science Graduate
+            Java Full Stack & GenAI Developer | Building Enterprise Solutions
           </h2>
         </motion.div>
 
@@ -35,8 +35,7 @@ export default function Hero() {
           className="mb-8"
         >
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Currently developing enterprise microservices platforms at State Farm Insurance. 
-            Specializing in Java, Spring Boot, Angular, React, and cloud-native deployments with 4+ years of hands-on experience.
+            4+ years building GenAI-powered microservices and full-stack applications for insurance and payroll sectors.
           </p>
         </motion.div>
 

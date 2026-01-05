@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Calendar, MapPin, ChevronDown, ChevronUp, Award, BookOpen, Code2, TrendingUp, Users, Zap } from 'lucide-react'
+import { Calendar, MapPin, ChevronDown, ChevronUp, Award, Code2, Zap } from 'lucide-react'
 import { useState } from 'react'
 import { experiences } from '../data/experiences'
 
@@ -45,30 +45,6 @@ export default function Experiences() {
     }
   ]
 
-  const projects = [
-    {
-      title: "Cloud-Native Authentication Service",
-      period: "Feb 2024 - March 2024",
-      description: "Architected scalable microservices platform with PostgreSQL integration, implementing BCrypt encryption and JWT-based authentication system.",
-      technologies: ["Spring Boot", "PostgreSQL", "Docker", "JWT", "OpenAPI/Swagger"],
-      highlights: [
-        "Engineered containerized deployment strategy using Docker and Docker Compose",
-        "Integrated comprehensive OpenAPI/Swagger documentation with automated API testing",
-        "Implemented Spring Boot Actuator for real-time health monitoring"
-      ]
-    },
-    {
-      title: "Humanoid Robot Motion Retargeting System",
-      period: "Sep 2023 - Jan 2024",
-      description: "Developed real-time motion capture and analysis system using Python, OpenCV, and MediaPipe, processing 3D human pose data for robotic applications.",
-      technologies: ["Python", "OpenCV", "MediaPipe", "TensorFlow", "Scikit-learn", "Matplotlib"],
-      highlights: [
-        "Achieved 80% accuracy in motion pattern recognition and classification",
-        "Created custom inverse kinematics solver for 14-DOF humanoid robot",
-        "Reduced motion jitter by 60% through advanced smoothing filters"
-      ]
-    }
-  ]
 
   return (
     <section id="experience" className="py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
@@ -122,7 +98,7 @@ export default function Experiences() {
             >
               <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl border border-gray-200 dark:border-gray-700 hover:shadow-2xl transition-all duration-300">
                 {/* Header */}
-                <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
+                <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-3">
                       <div className="w-12 h-12 bg-gradient-to-r from-primary-500 to-blue-500 rounded-xl flex items-center justify-center">
@@ -164,29 +140,11 @@ export default function Experiences() {
                   </button>
                 </div>
 
-                {/* Description */}
-                <div className="bg-gradient-to-r from-gray-50 to-blue-50 dark:from-gray-700 dark:to-gray-600 rounded-xl p-6 mb-6">
-                  <p className="text-gray-700 dark:text-gray-200 leading-relaxed font-medium">
+                {/* Description - Always visible */}
+                <div className="bg-gradient-to-r from-gray-50 to-blue-50 dark:from-gray-700 dark:to-gray-600 rounded-xl p-4 mb-4">
+                  <p className="text-gray-700 dark:text-gray-200 leading-relaxed">
                     {experience.description}
                   </p>
-                </div>
-
-                {/* Technologies */}
-                <div className="mb-6">
-                  <h4 className="text-sm font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-4 flex items-center gap-2">
-                    <Zap className="w-4 h-4" />
-                    Technology Stack
-                  </h4>
-                  <div className="flex flex-wrap gap-2">
-                    {experience.technologies.map((tech, techIndex) => (
-                      <span
-                        key={techIndex}
-                        className="px-4 py-2 bg-gradient-to-r from-blue-100 to-primary-100 dark:from-blue-900 dark:to-primary-900 text-blue-700 dark:text-blue-300 rounded-full text-sm font-semibold border border-blue-200 dark:border-blue-700 hover:shadow-md transition-all duration-200"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
                 </div>
 
                 {/* Expanded Details */}
@@ -196,25 +154,46 @@ export default function Experiences() {
                     animate={{ opacity: 1, height: 'auto' }}
                     exit={{ opacity: 0, height: 0 }}
                     transition={{ duration: 0.4 }}
-                    className="border-t border-gray-200 dark:border-gray-600 pt-6"
+                    className="border-t border-gray-200 dark:border-gray-600 pt-6 space-y-4"
                   >
-                    <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
-                      <Award className="w-5 h-5 text-primary-500" />
-                      Key Achievements & Impact
-                    </h4>
-                    <div className="grid gap-4">
-                      {experience.highlights?.map((highlight, highlightIndex) => (
-                        <motion.div
-                          key={highlightIndex}
-                          initial={{ opacity: 0, x: -20 }}
-                          animate={{ opacity: 1, x: 0 }}
-                          transition={{ delay: highlightIndex * 0.1 }}
-                          className="flex items-start gap-4 p-4 bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 rounded-xl border border-green-200 dark:border-green-700/50"
-                        >
-                          <div className="w-2 h-2 bg-gradient-to-r from-green-500 to-blue-500 rounded-full mt-3 flex-shrink-0" />
-                          <span className="text-gray-700 dark:text-gray-200 leading-relaxed font-medium">{highlight}</span>
-                        </motion.div>
-                      ))}
+                    {/* Technologies */}
+                    <div>
+                      <h4 className="text-sm font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-4 flex items-center gap-2">
+                        <Zap className="w-4 h-4" />
+                        Technology Stack
+                      </h4>
+                      <div className="flex flex-wrap gap-2">
+                        {experience.technologies.map((tech, techIndex) => (
+                          <span
+                            key={techIndex}
+                            className="px-4 py-2 bg-gradient-to-r from-blue-100 to-primary-100 dark:from-blue-900 dark:to-primary-900 text-blue-700 dark:text-blue-300 rounded-full text-sm font-semibold border border-blue-200 dark:border-blue-700 hover:shadow-md transition-all duration-200"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Key Achievements */}
+                    <div>
+                      <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+                        <Award className="w-5 h-5 text-primary-500" />
+                        Key Achievements & Impact
+                      </h4>
+                      <div className="grid gap-3">
+                        {experience.highlights?.map((highlight, highlightIndex) => (
+                          <motion.div
+                            key={highlightIndex}
+                            initial={{ opacity: 0, x: -20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ delay: highlightIndex * 0.05 }}
+                            className="group flex items-start gap-4 p-4 bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 rounded-xl border border-green-200 dark:border-green-700/50 hover:shadow-md transition-all duration-200"
+                          >
+                            <div className="w-2 h-2 bg-gradient-to-r from-green-500 to-blue-500 rounded-full mt-3 flex-shrink-0 group-hover:scale-150 transition-transform" />
+                            <span className="text-gray-700 dark:text-gray-200 leading-relaxed">{highlight}</span>
+                          </motion.div>
+                        ))}
+                      </div>
                     </div>
                   </motion.div>
                 )}
@@ -223,61 +202,6 @@ export default function Experiences() {
           ))}
         </div>
 
-        {/* Projects Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mb-20"
-        >
-          <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center">
-            Key Projects & Research
-          </h3>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {projects.map((project, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-                className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl border border-gray-200 dark:border-gray-700 hover:shadow-2xl transition-all duration-300"
-              >
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
-                    <BookOpen className="w-5 h-5 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-bold text-gray-900 dark:text-white">{project.title}</h4>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">{project.period}</p>
-                  </div>
-                </div>
-                <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">{project.description}</p>
-                <div className="mb-4">
-                  <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech, techIndex) => (
-                      <span
-                        key={techIndex}
-                        className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 rounded-full text-xs font-semibold"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-                <ul className="space-y-2">
-                  {project.highlights.map((highlight, highlightIndex) => (
-                    <li key={highlightIndex} className="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-300">
-                      <div className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 flex-shrink-0" />
-                      {highlight}
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
 
         {/* Publications Section */}
         <motion.div
