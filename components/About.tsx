@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Download, Award, Users, Code, BookOpen, ChevronDown, ChevronUp, ExternalLink, Calendar, GraduationCap, Briefcase, Star, TrendingUp } from 'lucide-react'
+import { Download, Award, ChevronDown, ChevronUp, GraduationCap, Briefcase } from 'lucide-react'
 import { useState } from 'react'
 
 export default function About() {
@@ -35,12 +35,11 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12"
+          className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12 max-w-2xl mx-auto"
         >
           {[
             { number: 4, suffix: '+', label: 'Years Experience', color: 'blue', icon: '💼' },
             { number: 3.7, suffix: '', label: 'GPA', color: 'green', icon: '🎓' },
-            { number: 3, suffix: '', label: 'Companies', color: 'purple', icon: '🏢' },
             { number: 1, suffix: '', label: 'IEEE Paper', color: 'orange', icon: '📄' }
           ].map((stat, index) => (
             <motion.div
@@ -69,53 +68,6 @@ export default function About() {
           ))}
         </motion.div>
 
-        {/* Interactive Skills Cloud */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="bg-gradient-to-r from-gray-50 to-blue-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8 mb-16"
-        >
-          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center">
-            <Code className="w-6 h-6 mr-3 text-primary-600" />
-            Tech Stack
-          </h3>
-          <div className="flex flex-wrap gap-3 justify-center">
-            {[
-              { name: 'Java', level: 95, category: 'Backend', color: 'red' },
-              { name: 'Spring Boot', level: 90, category: 'Framework', color: 'green' },
-              { name: 'React', level: 85, category: 'Frontend', color: 'blue' },
-              { name: 'Angular', level: 80, category: 'Frontend', color: 'red' },
-              { name: 'PostgreSQL', level: 85, category: 'Database', color: 'blue' },
-              { name: 'Kubernetes', level: 75, category: 'DevOps', color: 'blue' },
-              { name: 'AWS', level: 80, category: 'Cloud', color: 'orange' },
-              { name: 'Docker', level: 85, category: 'DevOps', color: 'blue' },
-              { name: 'TypeScript', level: 80, category: 'Language', color: 'blue' },
-              { name: 'Kafka', level: 70, category: 'Messaging', color: 'purple' }
-            ].map((skill, index) => (
-              <motion.div
-                key={skill.name}
-                whileHover={{ scale: 1.1, y: -5 }}
-                whileTap={{ scale: 0.95 }}
-                initial={{ opacity: 0, scale: 0 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.3, delay: index * 0.05 }}
-                className={`group relative cursor-pointer`}
-              >
-                <div className={`px-4 py-2 rounded-full bg-${skill.color}-100 dark:bg-${skill.color}-900/30 text-${skill.color}-800 dark:text-${skill.color}-300 text-sm font-medium border border-${skill.color}-200 dark:border-${skill.color}-700 hover:shadow-lg transition-all duration-300 hover:border-${skill.color}-300 dark:hover:border-${skill.color}-600`}>
-                  {skill.name}
-                </div>
-                {/* Tooltip */}
-                <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap z-10">
-                  {skill.category} • {skill.level}%
-                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-900 dark:border-t-gray-100"></div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
 
         <div className="max-w-4xl mx-auto">
           <motion.div
@@ -130,8 +82,8 @@ export default function About() {
               Professional Summary
             </h3>
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              Java Full Stack Developer specializing in GenAI solutions with 4+ years building enterprise applications for insurance and payroll sectors. 
-              Currently developing RAG-powered microservices at <strong className="text-primary-600 dark:text-primary-400">State Farm Insurance</strong> while pursuing Master's in Computer Science at <strong className="text-primary-600 dark:text-primary-400">Iowa State University</strong> (GPA: 3.7/4.0).
+              Java Full Stack Developer specializing in GenAI solutions with 4+ years developing enterprise applications for insurance and payroll sectors. 
+              Currently building RAG-powered microservices at <strong className="text-primary-600 dark:text-primary-400">State Farm Insurance</strong> while pursuing Master's in Computer Science at <strong className="text-primary-600 dark:text-primary-400">Iowa State University</strong>.
             </p>
           </motion.div>
 
@@ -149,40 +101,16 @@ export default function About() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
                 {
-                  title: "GenAI Integration",
-                  icon: "🤖",
-                  description: "10K+ claims daily with 95%+ accuracy",
-                  details: "Built RAG pipelines with Spring AI and LangChain4j"
-                },
-                {
-                  title: "Performance Optimization",
-                  icon: "⚡",
-                  description: "60% performance improvement",
-                  details: "Optimized queries and implemented caching strategies"
-                },
-                {
-                  title: "Microservices Architecture",
-                  icon: "🔄",
-                  description: "15+ microservices, 40% latency reduction",
-                  details: "Event-driven architecture with Kafka and Kubernetes"
-                },
-                {
-                  title: "Code Quality",
-                  icon: "🔐",
-                  description: "85%+ code coverage, 30% fewer incidents",
-                  details: "TDD practices with JUnit, Mockito, and SonarQube"
-                },
-                {
                   title: "Research Publication",
                   icon: "📚",
                   description: "IEEE paper published",
-                  details: "RFID encryption security research"
+                  details: "Secure Hash Algorithm Using SHA-256, RSA, and AES - Published in IEEE"
                 },
                 {
                   title: "Academic Excellence",
                   icon: "🏆",
                   description: "Global Scholars Award",
-                  details: "Recognition for graduate excellence"
+                  details: "Recognition for graduate excellence at Iowa State University"
                 }
               ].map((achievement, index) => (
                 <motion.div
@@ -214,91 +142,6 @@ export default function About() {
             </div>
           </motion.div>
 
-          {/* Interactive Career Timeline */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            className="bg-gradient-to-r from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 rounded-2xl p-6 mb-8"
-          >
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center">
-              <Calendar className="w-6 h-6 mr-3 text-primary-600" />
-              Career Journey
-            </h3>
-            <div className="relative">
-              <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary-500 to-primary-600"></div>
-              {[
-                {
-                  year: 'June 2024 - Present',
-                  title: 'Java Full Stack Engineer',
-                  company: 'State Farm Insurance',
-                  description: 'GenAI-powered microservices & RAG pipelines',
-                  icon: '🏢',
-                  highlights: ['Spring AI', 'LangChain4j', 'RAG', 'Kafka']
-                },
-                {
-                  year: 'June 2022 - Aug 2023',
-                  title: 'Java Full Stack Developer',
-                  company: 'ADP',
-                  description: 'ERP Modernization & Payroll Processing',
-                  icon: '💼',
-                  highlights: ['Microservices', 'Kafka', 'React', 'MongoDB']
-                },
-                {
-                  year: 'July 2020 - May 2022',
-                  title: 'Java Full Stack Developer',
-                  company: 'LTI Mindtree',
-                  description: 'Insurance Policy Servicing & Billing',
-                  icon: '🏦',
-                  highlights: ['Spring Boot', 'Oracle', 'Angular', 'Microservices']
-                }
-              ].map((item, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.15 }}
-                  whileHover={{ scale: 1.02 }}
-                  className="relative flex items-start mb-6 last:mb-0 group cursor-pointer"
-                >
-                  <motion.div 
-                    whileHover={{ scale: 1.2 }}
-                    className="absolute left-3 w-3 h-3 bg-primary-600 rounded-full border-4 border-white dark:border-gray-800 shadow-lg z-10"
-                  ></motion.div>
-                  <div className="ml-8 bg-white dark:bg-gray-800 rounded-lg p-5 shadow-md hover:shadow-xl transition-all duration-300 flex-1 group-hover:border-primary-200 dark:group-hover:border-primary-700 border border-gray-200 dark:border-gray-700">
-                    <div className="flex items-start justify-between mb-2">
-                      <div className="flex items-center">
-                        <span className="text-xl mr-3 group-hover:scale-110 transition-transform duration-300">
-                          {item.icon}
-                        </span>
-                        <div>
-                          <h4 className="font-semibold text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
-                            {item.title}
-                          </h4>
-                          <p className="text-primary-600 dark:text-primary-400 font-medium text-sm">
-                            {item.company}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <p className="text-gray-600 dark:text-gray-300 text-sm mb-2">{item.description}</p>
-                    <div className="flex flex-wrap gap-1.5 mb-2">
-                      {item.highlights.map((highlight, idx) => (
-                        <span key={idx} className="px-2 py-0.5 bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 text-xs rounded-full">
-                          {highlight}
-                        </span>
-                      ))}
-                    </div>
-                    <span className="inline-block bg-primary-100 dark:bg-primary-900/30 text-primary-800 dark:text-primary-300 px-2 py-0.5 rounded-full text-xs font-medium group-hover:bg-primary-200 dark:group-hover:bg-primary-800/50 transition-colors">
-                      {item.year}
-                    </span>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -355,7 +198,7 @@ export default function About() {
                   <div>
                     <h5 className="font-semibold text-gray-900 dark:text-white mb-2">Relevant Coursework</h5>
                     <div className="flex flex-wrap gap-2">
-                      {['Distributed Systems', 'Cloud Computing', 'Machine Learning', 'Database Systems', 'Software Engineering', 'Computer Networks'].map((course) => (
+                      {['Distributed Systems', 'Advanced Software Engineering', 'Cloud Computing & Security'].map((course) => (
                         <span key={course} className="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 px-3 py-1 rounded-full text-sm">
                           {course}
                         </span>
@@ -363,22 +206,14 @@ export default function About() {
                     </div>
                   </div>
                   <div>
-                    <h5 className="font-semibold text-gray-900 dark:text-white mb-2">Certifications & Awards</h5>
+                    <h5 className="font-semibold text-gray-900 dark:text-white mb-2">Awards</h5>
                     <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
                       <li className="flex items-center">
                         <Award className="w-4 h-4 mr-2 text-yellow-500" />
-                        Global Scholars Award recipient
-                      </li>
-                      <li className="flex items-center">
-                        <BookOpen className="w-4 h-4 mr-2 text-blue-500" />
-                        IEEE publication on RFID encryption security
+                        Global Scholars Award for Graduate Excellence
                       </li>
                     </ul>
                   </div>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">
-                    <strong>Credentials:</strong> Unofficial transcript available on request • 
-                    <strong>Professional Development:</strong> Ongoing study in distributed systems and cloud security
-                  </p>
                 </div>
               </motion.div>
             </div>

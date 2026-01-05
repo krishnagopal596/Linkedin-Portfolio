@@ -121,9 +121,7 @@ export default function Contact() {
                 Ready to Collaborate?
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-                I'm currently working at State Farm while completing my Master's degree. 
-                Open to discussing new opportunities in software engineering, particularly in backend development, cloud infrastructure, and robotics. 
-                Let's connect and explore potential collaborations!
+                Open to discussing opportunities in software engineering, particularly in full-stack development, GenAI integration, and cloud infrastructure.
               </p>
               <a
                 href="mailto:krishnagopal596@gmail.com?subject=Portfolio Contact - Let's Connect"

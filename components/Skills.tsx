@@ -68,7 +68,7 @@ export default function Skills() {
             Skills & Technologies
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Comprehensive expertise across full-stack development, GenAI integration, and cloud infrastructure
+            Full-stack development, GenAI integration, and cloud infrastructure
           </p>
         </motion.div>
 

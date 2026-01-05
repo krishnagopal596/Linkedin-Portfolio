@@ -15,7 +15,7 @@ export default function Experiences() {
   const publications = [
     {
       title: "Secure Hash Algorithm Using SHA-256, RSA, and AES",
-      description: "Developed a multi-layered encryption model for secure data transmission by integrating SHA-256 for hashing, 128-bit RSA for asymmetric encryption, and 16-byte AES for symmetric encryption to ensure end-to-end data protection.",
+      description: "Multi-layered encryption model integrating SHA-256, RSA, and AES for secure data transmission.",
       publisher: "IEEE",
       link: "https://ieeexplore.ieee.org/document/9792989",
       year: "2023"
@@ -24,24 +24,14 @@ export default function Experiences() {
 
   const achievements = [
     {
-      icon: TrendingUp,
-      title: "99.9% System Uptime",
-      description: "Achieved enterprise-grade reliability through comprehensive observability frameworks"
-    },
-    {
-      icon: Zap,
-      title: "85% Defect Reduction",
-      description: "Implemented automated testing strategies reducing production issues significantly"
-    },
-    {
-      icon: Users,
-      title: "Team Leadership",
-      description: "Led cross-functional teams of 8+ developers and mentored junior developers"
+      icon: Award,
+      title: "Research Publication",
+      description: "Published IEEE paper on Secure Hash Algorithm Using SHA-256, RSA, and AES"
     },
     {
       icon: Award,
-      title: "Performance Optimization",
-      description: "Improved system performance by 40%+ through advanced caching and optimization techniques"
+      title: "Academic Excellence",
+      description: "Global Scholars Award recipient for graduate excellence at Iowa State University"
     }
   ]
 
@@ -61,7 +51,7 @@ export default function Experiences() {
             Professional Journey
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
-            4+ years of experience architecting enterprise solutions across <span className="font-semibold text-primary-600 dark:text-primary-400">insurance, payroll, and ERP domains</span> with expertise in modern technologies and innovative approaches
+            4+ years developing enterprise applications across <span className="font-semibold text-primary-600 dark:text-primary-400">insurance, payroll, and ERP domains</span>
           </p>
         </motion.div>
 
@@ -71,7 +61,7 @@ export default function Experiences() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-20 max-w-2xl mx-auto"
         >
           {achievements.map((achievement, index) => (
             <div key={index} className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
@@ -259,11 +249,9 @@ export default function Experiences() {
           <div className="bg-gradient-to-r from-gray-900 to-blue-900 dark:from-gray-800 dark:to-blue-800 rounded-3xl p-12 text-white relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-primary-500/10 to-blue-500/10" />
             <div className="relative z-10">
-              <h3 className="text-4xl font-bold mb-6">Ready to Build the Future Together?</h3>
-              <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
-                Looking to contribute my expertise in <span className="font-semibold text-primary-300">enterprise Java development</span>, 
-                <span className="font-semibold text-blue-300"> cloud technologies</span>, and 
-                <span className="font-semibold text-purple-300"> innovative system architecture</span> to teams building transformative software solutions.
+              <h3 className="text-3xl font-bold mb-6">Open to New Opportunities</h3>
+              <p className="text-lg text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed">
+                Interested in discussing opportunities in full-stack development, GenAI integration, and cloud infrastructure.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
