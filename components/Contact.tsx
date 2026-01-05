@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Mail, MapPin, Calendar, Github, Linkedin, ExternalLink } from 'lucide-react'
+import { Mail, Github, Linkedin, ExternalLink } from 'lucide-react'
 
 export default function Contact() {
   return (
@@ -53,25 +53,6 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className="flex items-center space-x-4">
-                  <div className="p-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg">
-                    <MapPin className="w-6 h-6 text-primary-600 dark:text-primary-400" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white">Location</h4>
-                    <p className="text-gray-600 dark:text-gray-300">Bloomington, Illinois, United States</p>
-                  </div>
-                </div>
-
-                <div className="flex items-center space-x-4">
-                  <div className="p-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg">
-                    <Calendar className="w-6 h-6 text-primary-600 dark:text-primary-400" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white">Work Authorization</h4>
-                    <p className="text-gray-600 dark:text-gray-300">F-1 OPT (Available August 2025)</p>
-                  </div>
-                </div>
               </div>
             </motion.div>
 

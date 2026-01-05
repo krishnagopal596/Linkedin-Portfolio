@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Calendar, MapPin, ChevronDown, ChevronUp, Award, Code2, Zap } from 'lucide-react'
+import { Calendar, ChevronDown, ChevronUp, Award, Code2, Zap, TrendingUp, Users, BookOpen } from 'lucide-react'
 import { useState } from 'react'
 import { experiences } from '../data/experiences'
 
@@ -113,15 +113,9 @@ export default function Experiences() {
                         </p>
                       </div>
                     </div>
-                    <div className="flex flex-col sm:flex-row sm:items-center gap-4 text-gray-600 dark:text-gray-300">
-                      <div className="flex items-center gap-2">
-                        <Calendar className="w-4 h-4 text-primary-500" />
-                        <span className="font-medium">{experience.period}</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <MapPin className="w-4 h-4 text-primary-500" />
-                        <span className="font-medium">{experience.location}</span>
-                      </div>
+                    <div className="flex items-center gap-2 text-gray-600 dark:text-gray-300">
+                      <Calendar className="w-4 h-4 text-primary-500" />
+                      <span className="font-medium">{experience.period}</span>
                     </div>
                   </div>
                   <button

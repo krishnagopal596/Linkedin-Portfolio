@@ -24,7 +24,7 @@ export default function Hero() {
             Krishna Gopal Madhavaram
           </h1>
           <h2 className="text-2xl md:text-3xl font-semibold text-primary-600 dark:text-primary-400 mb-4">
-            Java Full Stack & GenAI Developer | Building Enterprise Solutions
+            Java Full Stack & GenAI Developer
           </h2>
         </motion.div>
 

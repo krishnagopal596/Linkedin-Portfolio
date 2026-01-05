@@ -19,7 +19,6 @@ export const projects: Project[] = [
     ],
     github: 'https://github.com/krishnagopal596/Real-Steel-Humanoid-Robot',
     featured: true,
-    stats: { stars: 28, forks: 8, views: 850 },
   },
 
   // 2. Cloud-Native Enterprise Authentication
@@ -39,7 +38,6 @@ export const projects: Project[] = [
     ],
     github: 'https://github.com/krishnagopal596/Cloud-Native-Enterprise-App',
     featured: true,
-    stats: { stars: 35, forks: 12, views: 1200 },
   },
 
   // 3. Hospital Management System
@@ -58,7 +56,6 @@ export const projects: Project[] = [
     ],
     github: 'https://github.com/krishnagopal596/HMS-Spring',
     featured: true,
-    stats: { stars: 31, forks: 9, views: 1100 },
     private: true,
   },
 
@@ -79,7 +76,6 @@ export const projects: Project[] = [
     github: 'https://github.com/krishnagopal596/linkedin-portfolio',
     live: 'https://krishna-portfolio.vercel.app',
     featured: true,
-    stats: { stars: 15, forks: 3, views: 450 },
   },
 
   // 5. Augmented Reality for E-Learning
@@ -98,7 +94,6 @@ export const projects: Project[] = [
     ],
     github: 'https://github.com/krishnagopal596/Augmented-Reality',
     featured: false,
-    stats: { stars: 18, forks: 4, views: 520 },
   },
 
   // 6. ROS2 TurtleBot3 Simulation
@@ -116,7 +111,6 @@ export const projects: Project[] = [
     ],
     github: 'https://github.com/krishnagopal596/ros2-turtlebot3-sim',
     featured: false,
-    stats: { stars: 12, forks: 2, views: 380 },
   },
 
   // 7. AWS User Interface
@@ -135,7 +129,6 @@ export const projects: Project[] = [
     ],
     github: 'https://github.com/krishnagopal596/AWS-User-Interface',
     featured: false,
-    stats: { stars: 38, forks: 15, views: 1400 },
   },
 
   // 8. Employee Certification UI
@@ -153,7 +146,6 @@ export const projects: Project[] = [
     ],
     github: 'https://github.com/krishnagopal596/Employee-certification-ui',
     featured: false,
-    stats: { stars: 22, forks: 5, views: 650 },
     private: true,
   },
 
@@ -174,7 +166,6 @@ export const projects: Project[] = [
     ],
     github: 'https://github.com/krishnagopal596/RFID-Encryption',
     featured: false,
-    stats: { stars: 52, forks: 25, views: 2800 },
   },
 
   // 11. Secure Hash Algorithms Suite
@@ -195,7 +186,6 @@ export const projects: Project[] = [
     github: 'https://github.com/krishnagopal596/Crypto-Hash',
     featured: false,
     publication: 'IEEE Publication',
-    stats: { stars: 45, forks: 22, views: 2100 },
   },
 
   // 12. URL Slicer (Least Complex)
@@ -211,7 +201,6 @@ export const projects: Project[] = [
     ],
     github: 'https://github.com/krishnagopal596/urlslicer',
     featured: false,
-    stats: { stars: 8, forks: 2, views: 200 },
   },
 ]
 

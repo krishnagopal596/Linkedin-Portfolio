@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Download, Award, Users, Code, BookOpen, ChevronDown, ChevronUp, ExternalLink, Calendar, MapPin, GraduationCap, Briefcase, Star, TrendingUp } from 'lucide-react'
+import { Download, Award, Users, Code, BookOpen, ChevronDown, ChevronUp, ExternalLink, Calendar, GraduationCap, Briefcase, Star, TrendingUp } from 'lucide-react'
 import { useState } from 'react'
 
 export default function About() {
@@ -233,7 +233,6 @@ export default function About() {
                   year: 'June 2024 - Present',
                   title: 'Java Full Stack Engineer',
                   company: 'State Farm Insurance',
-                  location: 'Bloomington, IL',
                   description: 'GenAI-powered microservices & RAG pipelines',
                   icon: '🏢',
                   highlights: ['Spring AI', 'LangChain4j', 'RAG', 'Kafka']
@@ -242,7 +241,6 @@ export default function About() {
                   year: 'June 2022 - Aug 2023',
                   title: 'Java Full Stack Developer',
                   company: 'ADP',
-                  location: 'Hyderabad, India',
                   description: 'ERP Modernization & Payroll Processing',
                   icon: '💼',
                   highlights: ['Microservices', 'Kafka', 'React', 'MongoDB']
@@ -251,7 +249,6 @@ export default function About() {
                   year: 'July 2020 - May 2022',
                   title: 'Java Full Stack Developer',
                   company: 'LTI Mindtree',
-                  location: 'Hyderabad, India',
                   description: 'Insurance Policy Servicing & Billing',
                   icon: '🏦',
                   highlights: ['Spring Boot', 'Oracle', 'Angular', 'Microservices']
@@ -284,10 +281,6 @@ export default function About() {
                             {item.company}
                           </p>
                         </div>
-                      </div>
-                      <div className="flex items-center text-xs text-gray-500 dark:text-gray-400">
-                        <MapPin className="w-3 h-3 mr-1" />
-                        {item.location}
                       </div>
                     </div>
                     <p className="text-gray-600 dark:text-gray-300 text-sm mb-2">{item.description}</p>
