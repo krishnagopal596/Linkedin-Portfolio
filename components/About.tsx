@@ -25,7 +25,7 @@ export default function About() {
             About Me
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Java Full Stack Developer at State Farm & Computer Science Graduate Student at Iowa State University
+            Building and testing enterprise applications using Selenium, Playwright, Spring Boot, Angular, React, Java, TypeScript, and API testing tools
           </p>
         </motion.div>
 
@@ -82,8 +82,7 @@ export default function About() {
               Professional Summary
             </h3>
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              Java Full Stack Developer specializing in GenAI solutions with 4+ years developing enterprise applications for insurance and payroll sectors. 
-              Currently building RAG-powered microservices at <strong className="text-primary-600 dark:text-primary-400">State Farm Insurance</strong> while pursuing Master's in Computer Science at <strong className="text-primary-600 dark:text-primary-400">Iowa State University</strong>.
+              Building and testing enterprise applications using <strong className="text-primary-600 dark:text-primary-400">Selenium</strong>, <strong className="text-primary-600 dark:text-primary-400">Playwright</strong>, <strong className="text-primary-600 dark:text-primary-400">Spring Boot</strong>, <strong className="text-primary-600 dark:text-primary-400">Angular</strong>, <strong className="text-primary-600 dark:text-primary-400">React</strong>, <strong className="text-primary-600 dark:text-primary-400">Java</strong>, <strong className="text-primary-600 dark:text-primary-400">TypeScript</strong>, and <strong className="text-primary-600 dark:text-primary-400">API testing</strong> tools across insurance, payroll, and ERP domains. Currently at <strong className="text-primary-600 dark:text-primary-400">State Farm Insurance</strong> while pursuing Master's in Computer Science at <strong className="text-primary-600 dark:text-primary-400">Iowa State University</strong>.
             </p>
           </motion.div>
 
@@ -175,7 +174,7 @@ export default function About() {
                     Iowa State University
                   </p>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Expected Graduation: August 2025 • GPA: 3.7/4.0
+                    August 2023 - August 2025 • GPA: 3.7/4.0
                   </p>
                 </div>
                 <a
