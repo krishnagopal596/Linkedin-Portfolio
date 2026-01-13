@@ -251,7 +251,7 @@ export default function Experiences() {
             <div className="relative z-10">
               <h3 className="text-3xl font-bold mb-6">Open to New Opportunities</h3>
               <p className="text-lg text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed">
-                Interested in discussing opportunities in full-stack development, GenAI integration, and cloud infrastructure.
+                Interested in discussing opportunities in full-stack development, test automation, and cloud infrastructure.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a

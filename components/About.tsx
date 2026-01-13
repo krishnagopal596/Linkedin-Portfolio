@@ -25,7 +25,7 @@ export default function About() {
             About Me
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Building and testing enterprise applications using Selenium, Playwright, Spring Boot, Angular, React, Java, TypeScript, and API testing tools
+            Java Full Stack Developer and QA Automation Engineer
           </p>
         </motion.div>
 

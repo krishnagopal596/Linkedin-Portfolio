@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Code, Database, Cloud, Shield, Brain, Sparkles } from 'lucide-react'
+import { Code, Database, Cloud, Shield, Sparkles, CheckCircle } from 'lucide-react'
 
 const skillCategories = [
   {
@@ -21,12 +21,12 @@ const skillCategories = [
     skills: ['Spring Boot', 'Hibernate', 'React', 'Angular', 'Node.js'],
   },
   {
-    title: 'GenAI & LLM',
-    icon: Brain,
+    title: 'Test Automation',
+    icon: CheckCircle,
     color: 'from-emerald-500 to-teal-500',
     bgColor: 'bg-emerald-50 dark:bg-emerald-900/20',
     borderColor: 'border-emerald-200 dark:border-emerald-800',
-    skills: ['Spring AI', 'LangChain4j', 'RAG', 'Vector Embeddings', 'OpenAI', 'Amazon Bedrock'],
+    skills: ['Selenium WebDriver', 'Playwright', 'Cypress', 'TestNG', 'Cucumber', 'REST Assured', 'Postman'],
   },
   {
     title: 'Cloud & DevOps',
@@ -45,12 +45,12 @@ const skillCategories = [
     skills: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'Kafka'],
   },
   {
-    title: 'Testing & Security',
+    title: 'Security & API',
     icon: Shield,
     color: 'from-green-500 to-emerald-500',
     bgColor: 'bg-green-50 dark:bg-green-900/20',
     borderColor: 'border-green-200 dark:border-green-800',
-    skills: ['JUnit', 'Mockito', 'Postman', 'Swagger', 'RBAC', 'JWT'],
+    skills: ['JUnit', 'Mockito', 'Swagger', 'RBAC', 'JWT', 'OAuth2'],
   },
 ]
 
@@ -68,7 +68,7 @@ export default function Skills() {
             Skills & Technologies
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Full-stack development, GenAI integration, and cloud infrastructure
+            Full-stack development, test automation, and cloud infrastructure
           </p>
         </motion.div>
 
@@ -124,7 +124,7 @@ export default function Skills() {
             {[
               { title: 'Languages', skills: 'Java, Python, JavaScript, TypeScript, SQL, Shell Scripting' },
               { title: 'Frameworks', skills: 'Spring Boot, Hibernate, React, Angular, Node.js' },
-              { title: 'GenAI & LLM', skills: 'Spring AI, LangChain4j, RAG, Vector Embeddings, OpenAI, Amazon Bedrock' },
+              { title: 'Test Automation', skills: 'Selenium WebDriver, Playwright, Cypress, TestNG, Cucumber, REST Assured, Postman' },
               { title: 'Cloud & DevOps', skills: 'AWS, Docker, Kubernetes, Terraform, Jenkins, GitHub Actions' },
               { title: 'Databases & Messaging', skills: 'PostgreSQL, MySQL, MongoDB, Redis, Kafka' },
               { title: 'Testing & Security', skills: 'JUnit, Mockito, Postman, Swagger, RBAC, JWT' },

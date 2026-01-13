@@ -32,7 +32,7 @@ export default function Projects() {
             Featured Projects
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            A collection of my work demonstrating full-stack development, GenAI integration, and cloud infrastructure.
+            A collection of my work demonstrating full-stack development, test automation, and cloud infrastructure.
           </p>
         </motion.div>
 

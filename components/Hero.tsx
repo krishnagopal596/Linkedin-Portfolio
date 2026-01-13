@@ -24,7 +24,7 @@ export default function Hero() {
             Krishna Gopal Madhavaram
           </h1>
           <h2 className="text-2xl md:text-3xl font-semibold text-primary-600 dark:text-primary-400 mb-4">
-            Java Full Stack & GenAI Developer
+            Java Full Stack Developer and QA Automation Engineer
           </h2>
         </motion.div>
 
@@ -35,7 +35,7 @@ export default function Hero() {
           className="mb-8"
         >
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            4+ years building GenAI-powered microservices and full-stack applications for insurance and payroll sectors.
+            Building and testing enterprise applications using Selenium, Playwright, Spring Boot, Angular, React, Java, TypeScript, and API testing tools across insurance, payroll, and ERP domains.
           </p>
         </motion.div>
 

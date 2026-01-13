@@ -121,7 +121,7 @@ export default function Contact() {
                 Ready to Collaborate?
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-                Open to discussing opportunities in software engineering, particularly in full-stack development, GenAI integration, and cloud infrastructure.
+                Open to discussing opportunities in software engineering, particularly in full-stack development, test automation, and cloud infrastructure.
               </p>
               <a
                 href="mailto:krishnagopal596@gmail.com?subject=Portfolio Contact - Let's Connect"
