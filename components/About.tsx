@@ -25,7 +25,7 @@ export default function About() {
             About Me
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Java Full Stack Developer and QA Automation Engineer
+            Java | Spring Boot | Angular | React | Selenium | Playwright
           </p>
         </motion.div>
 
@@ -82,7 +82,7 @@ export default function About() {
               Professional Summary
             </h3>
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              Building and testing enterprise applications using <strong className="text-primary-600 dark:text-primary-400">Selenium</strong>, <strong className="text-primary-600 dark:text-primary-400">Playwright</strong>, <strong className="text-primary-600 dark:text-primary-400">Spring Boot</strong>, <strong className="text-primary-600 dark:text-primary-400">Angular</strong>, <strong className="text-primary-600 dark:text-primary-400">React</strong>, <strong className="text-primary-600 dark:text-primary-400">Java</strong>, <strong className="text-primary-600 dark:text-primary-400">TypeScript</strong>, and <strong className="text-primary-600 dark:text-primary-400">API testing</strong> tools across insurance, payroll, and ERP domains. Currently at <strong className="text-primary-600 dark:text-primary-400">State Farm Insurance</strong> while pursuing Master's in Computer Science at <strong className="text-primary-600 dark:text-primary-400">Iowa State University</strong>.
+              Building and testing enterprise applications using <strong className="text-primary-600 dark:text-primary-400">Java</strong>, <strong className="text-primary-600 dark:text-primary-400">Spring Boot</strong>, <strong className="text-primary-600 dark:text-primary-400">Angular</strong>, <strong className="text-primary-600 dark:text-primary-400">React</strong>, <strong className="text-primary-600 dark:text-primary-400">Selenium</strong>, <strong className="text-primary-600 dark:text-primary-400">Playwright</strong>, and <strong className="text-primary-600 dark:text-primary-400">API testing</strong> tools across insurance, payroll, and ERP domains. Master of Science in Computer Science from <strong className="text-primary-600 dark:text-primary-400">Iowa State University</strong> (GPA: 3.7/4.0). Currently at <strong className="text-primary-600 dark:text-primary-400">State Farm Insurance</strong>.
             </p>
           </motion.div>
 
@@ -168,7 +168,7 @@ export default function About() {
               <div className="flex items-center justify-between">
                 <div>
                   <h4 className="font-semibold text-gray-900 dark:text-white">
-                    Master of Science in Computer Science
+                    Master of Science - MS, Computer Science
                   </h4>
                   <p className="text-primary-600 dark:text-primary-400 font-medium">
                     Iowa State University
@@ -185,6 +185,19 @@ export default function About() {
                   <Download className="w-4 h-4" />
                   <span>Resume</span>
                 </a>
+              </div>
+              <div className="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-600">
+                <div>
+                  <h4 className="font-semibold text-gray-900 dark:text-white">
+                    Bachelor of Technology - BTech, Electronics and Communication Engineering
+                  </h4>
+                  <p className="text-primary-600 dark:text-primary-400 font-medium">
+                    Vardhaman College of Engineering (VCEH)
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    July 2018 - August 2022
+                  </p>
+                </div>
               </div>
               
               <motion.div

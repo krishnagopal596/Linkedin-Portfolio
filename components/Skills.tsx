@@ -26,7 +26,7 @@ const skillCategories = [
     color: 'from-emerald-500 to-teal-500',
     bgColor: 'bg-emerald-50 dark:bg-emerald-900/20',
     borderColor: 'border-emerald-200 dark:border-emerald-800',
-    skills: ['Selenium WebDriver', 'Playwright', 'Cypress', 'TestNG', 'Cucumber', 'REST Assured', 'Postman'],
+    skills: ['Selenium WebDriver', 'Playwright', 'Cypress', 'TestNG', 'Cucumber', 'REST Assured', 'Postman', 'SoapUI'],
   },
   {
     title: 'Cloud & DevOps',
@@ -122,9 +122,10 @@ export default function Skills() {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
+              { title: 'Top Skills', skills: 'Core Java, Selenium WebDriver, SoapUI' },
               { title: 'Languages', skills: 'Java, Python, JavaScript, TypeScript, SQL, Shell Scripting' },
               { title: 'Frameworks', skills: 'Spring Boot, Hibernate, React, Angular, Node.js' },
-              { title: 'Test Automation', skills: 'Selenium WebDriver, Playwright, Cypress, TestNG, Cucumber, REST Assured, Postman' },
+              { title: 'Test Automation', skills: 'Selenium WebDriver, Playwright, Cypress, TestNG, Cucumber, REST Assured, Postman, SoapUI' },
               { title: 'Cloud & DevOps', skills: 'AWS, Docker, Kubernetes, Terraform, Jenkins, GitHub Actions' },
               { title: 'Databases & Messaging', skills: 'PostgreSQL, MySQL, MongoDB, Redis, Kafka' },
               { title: 'Testing & Security', skills: 'JUnit, Mockito, Postman, Swagger, RBAC, JWT' },

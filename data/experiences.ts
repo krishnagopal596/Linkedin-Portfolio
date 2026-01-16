@@ -3,12 +3,12 @@ import type { Experience } from '../types/portfolio'
 export const experiences: Experience[] = [
   {
     company: 'State Farm Insurance',
-    role: 'Java Full Stack Engineer',
-    period: 'June 2024 – Present',
-    location: 'Bloomington, IL',
+    role: 'Software Engineer',
+    period: 'June 2024 - Present',
+    location: 'Bloomington, Illinois, United States',
     description:
       'Building GenAI-powered microservices and full-stack applications for insurance claims processing, integrating RAG pipelines and LLM workflows with enterprise systems.',
-    technologies: ['Java 21', 'Spring Boot 3.x', 'Spring AI', 'LangChain4j', 'RAG', 'Vector Embeddings', 'Angular 14+', 'React 18', 'TypeScript', 'Apache Kafka', 'MySQL', 'AWS CloudWatch', 'Prometheus', 'Grafana'],
+    technologies: ['Java', 'Spring Boot', 'React', 'JUnit', 'Mockito', 'Test-Driven Development'],
     highlights: [
       'Built LLM-integrated workflow pipelines using Spring AI and LangChain4j to transform unstructured claim narratives into structured data for automated routing',
       'Integrated GenAI services into existing claims workflows via REST APIs and Kafka event streams, implementing event-driven architecture to ensure data consistency across microservices',
@@ -19,12 +19,12 @@ export const experiences: Experience[] = [
   },
   {
     company: 'ADP',
-    role: 'Java Full Stack Developer',
-    period: 'June 2022 – August 2023',
-    location: 'Hyderabad, India',
+    role: 'Member Technical',
+    period: 'Jun 2022 - Aug 2023',
+    location: 'Hyderabad, Telangana, India',
     description:
       'Migrated legacy systems to Spring Boot microservices and built event-driven payroll processing platforms serving enterprise clients.',
-    technologies: ['Java', 'Spring Boot', 'Spring Batch', 'React', 'TypeScript', 'D3.js', 'Redis', 'Apache Kafka', 'MongoDB', 'Jenkins', 'Kubernetes', 'OAuth2', 'JWT', 'Python'],
+    technologies: ['Java', 'Spring Boot', 'React', 'Selenium', 'TestNG', 'Automated Testing'],
     highlights: [
       'Migrated legacy MuleSoft components to Spring Boot microservices as part of ERP modernization initiative, improving system maintainability and scalability',
       'Solved distributed transaction management challenges across payroll microservices by implementing transaction coordination patterns to handle concurrent processing and ensure data consistency',
@@ -36,12 +36,12 @@ export const experiences: Experience[] = [
   },
   {
     company: 'LTI Mindtree',
-    role: 'Java Full Stack Developer',
-    period: 'July 2020 – May 2022',
-    location: 'Hyderabad, India',
+    role: 'Software Engineer',
+    period: 'May 2021 - June 2022',
+    location: 'Hyderabad, Telangana, India',
     description:
       'Developed Spring Boot microservices for insurance policy servicing and billing operations, integrating with legacy mainframe systems.',
-    technologies: ['Java', 'Spring Boot', 'Spring Integration', 'Angular', 'Oracle', 'SOAP', 'REST APIs', 'Spring Security', 'JWT', 'Python', 'Shell Scripting'],
+    technologies: ['Java', 'Spring Boot', 'Angular', 'REST Assured', 'API Testing', 'Postman'],
     highlights: [
       'Developed Spring Boot microservices for policy servicing and billing operations, implementing REST APIs for policy renewal, premium calculation, and payment processing, integrating with legacy mainframe systems via SOAP services',
       'Built integration components using Spring Integration patterns for asynchronous message processing between policy management and billing systems, ensuring data consistency across services',

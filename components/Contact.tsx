@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Mail, Github, Linkedin, ExternalLink } from 'lucide-react'
+import { Mail, Github, Linkedin, ExternalLink, Phone, MapPin } from 'lucide-react'
 
 export default function Contact() {
   return (
@@ -52,7 +52,29 @@ export default function Contact() {
                     </a>
                   </div>
                 </div>
-
+                <div className="flex items-center space-x-4">
+                  <div className="p-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg">
+                    <Phone className="w-6 h-6 text-primary-600 dark:text-primary-400" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 dark:text-white">Phone</h4>
+                    <a 
+                      href="tel:+15159163183"
+                      className="text-primary-600 dark:text-primary-400 hover:underline"
+                    >
+                      +1 515 916 3183
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-4">
+                  <div className="p-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg">
+                    <MapPin className="w-6 h-6 text-primary-600 dark:text-primary-400" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 dark:text-white">Location</h4>
+                    <p className="text-gray-600 dark:text-gray-300">United States</p>
+                  </div>
+                </div>
               </div>
             </motion.div>
 
@@ -70,6 +92,42 @@ export default function Contact() {
               
               <div className="space-y-4">
                 <a
+                  href="https://linkedin.com/in/krishna-gopal-madhavaram-38485a218"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-4 p-4 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200 group"
+                >
+                  <div className="p-2 bg-linkedin rounded-lg">
+                    <Linkedin className="w-5 h-5 text-white" />
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400">
+                      LinkedIn Profile
+                    </h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-300">krishna-gopal-madhavaram-38485a218</p>
+                  </div>
+                  <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-primary-600 dark:group-hover:text-primary-400" />
+                </a>
+
+                <a
+                  href="https://krishnagopal596.github.io/Linkedin-Portfolio/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-4 p-4 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200 group"
+                >
+                  <div className="p-2 bg-primary-600 rounded-lg">
+                    <ExternalLink className="w-5 h-5 text-white" />
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400">
+                      Portfolio
+                    </h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-300">krishnagopal596.github.io/Linkedin-Portfolio/</p>
+                  </div>
+                  <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-primary-600 dark:group-hover:text-primary-400" />
+                </a>
+
+                <a
                   href="https://github.com/krishnagopal596"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -83,24 +141,6 @@ export default function Contact() {
                       GitHub Profile
                     </h4>
                     <p className="text-sm text-gray-600 dark:text-gray-300">krishnagopal596</p>
-                  </div>
-                  <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-primary-600 dark:group-hover:text-primary-400" />
-                </a>
-
-                <a
-                  href="https://linkedin.com/in/krishna-gopal-madhavaram"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center space-x-4 p-4 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200 group"
-                >
-                  <div className="p-2 bg-linkedin rounded-lg">
-                    <Linkedin className="w-5 h-5 text-white" />
-                  </div>
-                  <div className="flex-1">
-                    <h4 className="font-semibold text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400">
-                      LinkedIn Profile
-                    </h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-300">Krishna Gopal Madhavaram</p>
                   </div>
                   <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-primary-600 dark:group-hover:text-primary-400" />
                 </a>
