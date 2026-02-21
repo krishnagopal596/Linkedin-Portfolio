@@ -51,7 +51,7 @@ export default function Experiences() {
             Professional Journey
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
-            4+ years developing enterprise applications across <span className="font-semibold text-primary-600 dark:text-primary-400">insurance, payroll, and ERP domains</span>
+            4+ years of full-stack Java development across <span className="font-semibold text-primary-600 dark:text-primary-400">insurance, payroll, and ERP domains</span> with expertise in Spring Boot microservices, Angular/React frontends, and cloud-native deployment
           </p>
         </motion.div>
 
