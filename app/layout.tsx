@@ -6,23 +6,6 @@ import ThemeToggle from '../components/ThemeToggle'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
-  title: 'Krishna Gopal Madhavaram - Java Full Stack Developer at State Farm',
-  description: 'Java Full Stack Developer at State Farm Insurance with 4+ years of hands-on experience in enterprise microservices, Spring Boot, Angular, React, and cloud-native deployments.',
-  keywords: ['Java Full Stack Developer', 'State Farm', 'Spring Boot', 'Angular', 'React', 'Microservices', 'Cloud Native', 'Enterprise Development', 'Java', 'TypeScript'],
-  authors: [{ name: 'Krishna Gopal Madhavaram' }],
-  openGraph: {
-    title: 'Krishna Gopal Madhavaram - Java Full Stack Developer at State Farm',
-    description: 'Java Full Stack Developer at State Farm Insurance with 4+ years of hands-on experience in enterprise microservices and cloud-native deployments.',
-    type: 'website',
-    url: 'https://krishnagopal596.github.io/Linkedin-Portfolio',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Krishna Gopal Madhavaram - Java Full Stack Developer at State Farm',
-    description: 'Java Full Stack Developer at State Farm Insurance with 4+ years of hands-on experience in enterprise microservices and cloud-native deployments.',
-  },
-}
 
 export default function RootLayout({
   children,

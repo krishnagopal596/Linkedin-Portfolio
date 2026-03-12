@@ -10,64 +10,29 @@ export default function About() {
   const toggleSection = (section: string) => {
     setExpandedSection(expandedSection === section ? null : section)
   }
-
   return (
-    <section id="about" className="py-20 bg-white dark:bg-gray-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about" className="py-16 bg-gray-100 dark:bg-gray-900">
+      <div className="container mx-auto px-4">  
+
+        {/* Professional summary from resume */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="max-w-4xl mx-auto mb-8"
         >
-          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            About Me
-          </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Full Stack Developer specializing in Enterprise Java, Microservices, and Cloud-Native Solutions
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            Java Software Engineer with 4 years of experience designing and developing scalable
+            enterprise applications using Java, Spring Boot, and microservices architecture.
+            Experienced across the full Software Development Life Cycle (SDLC) including
+            requirements analysis, software architecture, system integration, development,
+            testing, debugging, and deployment. Strong expertise in building high performance
+            backend services, database architectures, and distributed systems using Java,
+            JavaScript, Apache Kafka, Spring Batch, REST APIs, and AWS to deliver secure,
+            reliable, and user-focused applications.
           </p>
         </motion.div>
-
-        {/* Interactive Statistics Cards */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12 max-w-2xl mx-auto"
-        >
-          {[
-            { number: 4, suffix: '+', label: 'Years Experience', color: 'blue', icon: '💼' },
-            { number: 3.8, suffix: '', label: 'Bachelor GPA', color: 'green', icon: '🎓' },
-            { number: 3.8, suffix: '', label: 'Master GPA', color: 'orange', icon: '📚' }
-          ].map((stat, index) => (
-            <motion.div
-              key={stat.label}
-              whileHover={{ scale: 1.05, rotateY: 5 }}
-              whileTap={{ scale: 0.95 }}
-              className={`bg-gradient-to-br from-${stat.color}-50 to-${stat.color}-100 dark:from-${stat.color}-900/20 dark:to-${stat.color}-800/20 rounded-xl p-6 text-center cursor-pointer group relative overflow-hidden`}
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <div className="relative z-10">
-                <div className="text-4xl mb-2 group-hover:scale-110 transition-transform duration-300">{stat.icon}</div>
-                <motion.div 
-                  className={`text-3xl font-bold text-${stat.color}-600 dark:text-${stat.color}-400 mb-2`}
-                  initial={{ scale: 0 }}
-                  whileInView={{ scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                >
-                  {stat.number}{stat.suffix}
-                </motion.div>
-                <div className="text-sm text-gray-600 dark:text-gray-300 group-hover:text-gray-800 dark:group-hover:text-gray-200 transition-colors">
-                  {stat.label}
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
-
 
         <div className="max-w-4xl mx-auto space-y-6">
           
@@ -117,12 +82,12 @@ export default function About() {
             </h3>
             <div className="space-y-4">
               <div className="bg-white dark:bg-gray-900 rounded-xl p-4">
-                <h4 className="font-bold text-gray-900 dark:text-white mb-2">Current Role: Senior Full Stack Developer at State Farm Insurance</h4>
+                <h4 className="font-bold text-gray-900 dark:text-white mb-2">Current Role: Java Software Engineer Stack Developer at State Farm Insurance</h4>
                 <p className="text-gray-700 dark:text-gray-300 mb-2">June 2024 - Present | Bloomington, Illinois</p>
-                <p className="text-gray-600 dark:text-gray-400">Building enterprise insurance platform with Spring Boot microservices, React/Angular frontends, real-time data synchronization, and cloud-native deployment on Azure AKS.</p>
+                <p className="text-gray-600 dark:text-gray-400">Building enterprise insurance platform with Spring Boot microservices, React/Angular frontends, real-time data synchronization.</p>
               </div>
               <div className="border-l-4 border-primary-600 pl-4 text-sm text-gray-600 dark:text-gray-400">
-                <strong>Total Professional Experience:</strong> 4+ years of full-stack Java development across insurance, payroll, and ERP domains with progressive growth in architecting scalable enterprise solutions
+                <strong>Total Professional Experience:</strong> 4+ years of full-stack Java development across insurance, payroll, and ERP domains, serving clients such as State Farm and ADP with scalable enterprise solutions.
               </div>
             </div>
           </motion.div>
@@ -212,7 +177,7 @@ export default function About() {
                       Vardhaman College of Engineering (VCEH)
                     </p>
                   </div>
-                  <span className="g-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 px-3 py-1 rounded-full text-sm font-semibold">
+                  <span className="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 px-3 py-1 rounded-full text-sm font-semibold">
                     3.8/4.0 GPA
                   </span>
                 </div>
@@ -238,8 +203,10 @@ export default function About() {
                       <li className="flex items-start">
                         <span className="text-yellow-500 mr-2">★</span>
                         Published IEEE research paper in final year
-                      </li>
-                    </ul>
+                      </li>                      <li className="flex items-start">
+                        <span className="text-yellow-500 mr-2">★</span>
+                        AWS Certified Solutions Architect – Associate (2024)
+                      </li>                    </ul>
                   </div>
                 </motion.div>
               </div>

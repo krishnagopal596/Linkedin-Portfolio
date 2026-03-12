@@ -23,15 +23,21 @@ export default function Experiences() {
   ]
 
   const achievements = [
+
     {
-      icon: Award,
-      title: "Research Publication",
-      description: "Published IEEE paper on Secure Hash Algorithm Using SHA-256, RSA, and AES"
+      icon: Award,      
+      title: "Academic Excellence",
+      description: "Global Scholars Award recipient for graduate excellence at Iowa State University"
     },
     {
       icon: Award,
-      title: "Academic Excellence",
-      description: "Global Scholars Award recipient for graduate excellence at Iowa State University"
+      title: "AWS Certification",
+      description: "Solutions Architect – Associate (2024)"
+    },
+    {
+      icon: Award,
+      title: "Portfolio Dashboard",
+      description: "Built and deployed interactive analytics dashboard"
     }
   ]
 

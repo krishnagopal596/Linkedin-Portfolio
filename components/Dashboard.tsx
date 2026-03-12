@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Github, Linkedin, TrendingUp, Users, Star, Calendar, Code, Database, Cloud, Zap } from 'lucide-react'
+import { Github, Linkedin, TrendingUp, Users, Star, Code, Cloud } from 'lucide-react'
 import { useEffect, useState } from 'react'
 
 function useSocialMetrics() {
@@ -52,14 +52,14 @@ const achievements = [
     year: '2023'
   },
   {
-    title: '98% Test Coverage',
-    description: 'Hospital Management System',
-    year: '2021'
+    title: 'AWS Certification',
+    description: 'Solutions Architect – Associate (2024)',
+    year: '2024'
   },
   {
-    title: '40% Performance Improvement',
-    description: 'ETL Pipeline Optimization',
-    year: '2020'
+    title: '99.9% Uptime',
+    description: 'Azure AKS production deployment',
+    year: '2025'
   }
 ]
 
@@ -212,6 +212,26 @@ export default function Dashboard() {
               ))}
             </div>
           </motion.div>
+
+          {/* Clients / Employers */}
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100"
+          >
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="p-2 bg-blue-100 rounded-lg text-blue-600">
+                <Users className="w-6 h-6" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900">Clients & Employers</h3>
+            </div>
+            <ul className="list-disc list-inside space-y-2 text-gray-700">
+              {['State Farm Insurance', 'ADP', 'Cognizant'].map((c) => (
+                <li key={c}>{c}</li>
+              ))}
+            </ul>
+          </motion.div>
         </div>
 
         {/* Professional Growth Chart */}
@@ -223,42 +243,10 @@ export default function Dashboard() {
         >
           <div className="text-center mb-8">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">Professional Growth Timeline</h3>
-            <p className="text-lg text-gray-600">
-              My journey from ETL intern to software engineer, showcasing continuous learning and advancement
-            </p>
+          
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-              className="bg-white rounded-xl p-6 text-center shadow-md"
-            >
-              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Database className="w-6 h-6 text-blue-600" />
-              </div>
-              <h4 className="font-semibold text-gray-900 mb-2">ETL & Data Engineering</h4>
-              <p className="text-gray-600 text-sm mb-2">Cognizant Intern</p>
-              <p className="text-xs text-gray-500">2020</p>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-              className="bg-white rounded-xl p-6 text-center shadow-md"
-            >
-              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Code className="w-6 h-6 text-green-600" />
-              </div>
-              <h4 className="font-semibold text-gray-900 mb-2">Full-Stack Development</h4>
-              <p className="text-gray-600 text-sm mb-2">Mindtree Intern</p>
-              <p className="text-xs text-gray-500">2021</p>
-            </motion.div>
-            
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
