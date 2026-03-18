@@ -21,7 +21,7 @@ export default function ThemeToggle() {
     )
   }
 
-  const { theme, toggleTheme } = useTheme()
+const { theme, toggleTheme } = useTheme()
 
   return (
     <motion.button

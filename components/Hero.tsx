@@ -24,7 +24,7 @@ export default function Hero() {
             Krishna Gopal Madhavaram
           </h1>
           <h2 className="text-2xl md:text-3xl font-semibold text-primary-600 dark:text-primary-400 mb-4">
-            Java | Spring Boot | Angular | React | Selenium | Playwright
+            Java | Spring Boot | Angular | React
           </h2>
         </motion.div>
 
@@ -35,7 +35,7 @@ export default function Hero() {
           className="mb-8"
         >
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Building and testing enterprise applications using Java, Spring Boot, Angular, React, Selenium, Playwright, and API testing tools across insurance, payroll, and ERP domains. Master of Science in Computer Science from Iowa State University (GPA: 3.7/4.0). Currently at State Farm Insurance.
+            Building and testing enterprise applications using Java, Spring Boot, Angular, React and API testing tools across insurance, payroll, and ERP domains. Master of Science in Computer Science from Iowa State University (GPA: 3.7/4.0). Currently at State Farm Insurance.
           </p>
         </motion.div>
 

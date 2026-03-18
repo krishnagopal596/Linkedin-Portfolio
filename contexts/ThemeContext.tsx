@@ -16,37 +16,33 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
-    // Check for saved theme preference or system preference
     const savedTheme = localStorage.getItem('theme') as Theme | null
-    let initialTheme: Theme = 'light'
-    
+
     if (savedTheme) {
-      initialTheme = savedTheme
-    } else if (typeof window !== 'undefined' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      initialTheme = 'dark'
+      setTheme(savedTheme)
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      setTheme('dark')
     }
-    
-    setTheme(initialTheme)
+
     setMounted(true)
   }, [])
 
   useEffect(() => {
-    if (mounted) {
-      // Apply theme to document
-      const root = window.document.documentElement
-      root.classList.remove('light', 'dark')
-      root.classList.add(theme)
-      localStorage.setItem('theme', theme)
+    if (!mounted) return
+
+    const root = document.documentElement
+
+    if (theme === 'dark') {
+      root.classList.add('dark')
+    } else {
+      root.classList.remove('dark')
     }
+
+    localStorage.setItem('theme', theme)
   }, [theme, mounted])
 
   const toggleTheme = () => {
-    setTheme(prev => prev === 'light' ? 'dark' : 'light')
-  }
-
-  // Prevent hydration mismatch
-  if (!mounted) {
-    return <>{children}</>
+    setTheme(prev => (prev === 'light' ? 'dark' : 'light'))
   }
 
   return (
@@ -58,7 +54,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
 export function useTheme() {
   const context = useContext(ThemeContext)
-  if (context === undefined) {
+  if (!context) {
     throw new Error('useTheme must be used within a ThemeProvider')
   }
   return context
