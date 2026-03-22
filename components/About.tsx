@@ -171,7 +171,7 @@ export default function About() {
                 <div className="flex justify-between items-start mb-3">
                   <div>
                     <h4 className="font-bold text-gray-900 dark:text-white text-lg">
-                      Bachelor of Technology (BTech) - Electronics and Communication Engineering
+                      Bachelor of Technology (BTech) - Computer Science
                     </h4>
                     <p className="text-primary-600 dark:text-primary-400 font-semibold">
                       Vardhaman College of Engineering (VCEH)

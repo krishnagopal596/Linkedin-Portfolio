@@ -3,7 +3,7 @@ import type { Experience } from '../types/portfolio'
 export const experiences: Experience[] = [
   {
     company: 'State Farm Insurance',
-    role: 'Java Software Engineer | Full Stack',
+    role: 'Java Software Engineer',
     period: 'June 2024 - Present',
     location: 'Bloomington, Illinois',
     description:

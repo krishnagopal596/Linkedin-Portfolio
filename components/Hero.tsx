@@ -32,7 +32,7 @@ export default function Hero() {
           </div>
 
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4">
-            Krishna Gopal Madhavaram
+            M Krishna Gopal Rao
           </h1>
           <h2 className="text-2xl md:text-3xl font-semibold text-primary-600 dark:text-primary-400 mb-4">
             Java | Spring Boot | Angular | React

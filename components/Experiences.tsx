@@ -33,11 +33,6 @@ export default function Experiences() {
       icon: Award,
       title: "AWS Certification",
       description: "Solutions Architect – Associate (2024)"
-    },
-    {
-      icon: Award,
-      title: "Portfolio Dashboard",
-      description: "Built and deployed interactive analytics dashboard"
     }
   ]
 
