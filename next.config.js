@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
+const isGitHubActions = process.env.GITHUB_ACTIONS === 'true'
 const isGitHubPages = process.env.GITHUB_PAGES === 'true'
-const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1] ?? ''
-const basePath = isGitHubPages && repoName ? `/${repoName}` : ''
+const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1] ?? 'Linkedin-Portfolio'
+const basePath = (isGitHubActions || isGitHubPages) ? `/${repoName}` : ''
 
 const nextConfig = {
   output: 'export',
@@ -10,7 +11,7 @@ const nextConfig = {
   },
   trailingSlash: true,
   basePath,
-  assetPrefix: basePath || undefined,
+  assetPrefix: basePath ? `${basePath}/` : undefined,
 }
 
 module.exports = nextConfig
