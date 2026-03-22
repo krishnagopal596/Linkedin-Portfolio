@@ -43,7 +43,7 @@ export default function Contact() {
                     <Mail className="w-6 h-6 text-primary-600 dark:text-primary-400" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white">Email</h4>
+                    <h4 className="font-semibold text-gray-900 dark:text-white">Personal Email</h4>
                     <a 
                       href="mailto:krishnagopal596@gmail.com"
                       className="text-primary-600 dark:text-primary-400 hover:underline"
@@ -52,6 +52,7 @@ export default function Contact() {
                     </a>
                   </div>
                 </div>
+
                 <div className="flex items-center space-x-4">
                   <div className="p-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg">
                     <Phone className="w-6 h-6 text-primary-600 dark:text-primary-400" />

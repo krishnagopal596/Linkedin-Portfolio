@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { ChevronDown, Download } from 'lucide-react'
+import Image from 'next/image'
 
 export default function Hero() {
   return (
@@ -20,6 +21,16 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mb-6"
         >
+           <div className="mb-6">
+            <Image
+              src="/profile.jpeg"  // Change to your image filename
+              alt="Krishna Gopal Madhavaram"
+              width={150}
+              height={150}
+              className="rounded-full mx-auto border-4 border-white dark:border-gray-800 shadow-lg"
+            />
+          </div>
+
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4">
             Krishna Gopal Madhavaram
           </h1>
@@ -46,7 +57,7 @@ export default function Hero() {
           className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
         >
           <a
-            href="/Krishna_Madhavaram_Resume_JFS.docx"
+            href="/Krishna_Madhavaram_Resume.pdf"
             download
             className="inline-flex items-center space-x-2 px-8 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors duration-200 font-semibold shadow-lg"
           >
