@@ -23,7 +23,7 @@ export default function Hero() {
         >
            <div className="mb-6">
             <Image
-              src="/profile.jpeg"  // Change to your image filename
+              src="profile.jpeg"
               alt="Krishna Gopal Madhavaram"
               width={150}
               height={150}
@@ -57,7 +57,7 @@ export default function Hero() {
           className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
         >
           <a
-            href="/Krishna_Madhavaram_Resume.pdf"
+            href="Krishna_Madhavaram_Resume.pdf"
             download
             className="inline-flex items-center space-x-2 px-8 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors duration-200 font-semibold shadow-lg"
           >

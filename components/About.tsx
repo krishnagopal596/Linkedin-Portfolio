@@ -269,7 +269,7 @@ export default function About() {
                   Get In Touch
                 </a>
                 <a
-                  href="/Krishna_Madhavaram_Resume_JFS.docx"
+                  href="Krishna_Madhavaram_Resume.pdf"
                   download
                   className="inline-flex items-center space-x-2 px-8 py-4 bg-white/10 text-white rounded-xl hover:bg-white/20 transition-all duration-200 font-semibold border border-white/20"
                 >
