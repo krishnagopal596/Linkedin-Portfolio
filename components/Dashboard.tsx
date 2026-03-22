@@ -11,12 +11,16 @@ function useSocialMetrics() {
   const [updatedAt, setUpdatedAt] = useState<string | null>(null)
 
   useEffect(() => {
-    // GitHub followers live
-    fetch('/api/github/stats')
+    // GitHub Pages is static-only, so fetch the public profile directly.
+    fetch('https://api.github.com/users/krishnagopal596', {
+      headers: {
+        Accept: 'application/vnd.github+json',
+      },
+    })
       .then(r => r.ok ? r.json() : { followers: null })
       .then(j => setGithubFollowers(j.followers ?? null))
       .catch(() => setGithubFollowers(null))
-    // LinkedIn counts from localStorage (dashboard-managed)
+
     try {
       const raw = localStorage.getItem('portfolio.social')
       if (raw) {
@@ -53,7 +57,7 @@ const achievements = [
   },
   {
     title: 'AWS Certification',
-    description: 'Solutions Architect – Associate (2024)',
+    description: 'Solutions Architect - Associate (2024)',
     year: '2024'
   },
   {
@@ -68,21 +72,21 @@ export default function Dashboard() {
   const metrics = [
     {
       title: 'GitHub Followers',
-      value: githubFollowers ?? '—',
+      value: githubFollowers ?? '-',
       icon: <Github className="w-6 h-6" />,
       color: 'bg-gray-900',
       description: 'Live from GitHub',
     },
     {
       title: 'LinkedIn Followers',
-      value: linkedinFollowers ?? '—',
+      value: linkedinFollowers ?? '-',
       icon: <Linkedin className="w-6 h-6" />,
       color: 'bg-linkedin',
       description: updatedAt ? `Updated ${new Date(updatedAt).toLocaleDateString()}` : 'Set in Dashboard',
     },
     {
       title: 'LinkedIn Connections',
-      value: linkedinConnections ?? '—',
+      value: linkedinConnections ?? '-',
       icon: <Linkedin className="w-6 h-6" />,
       color: 'bg-linkedin',
       description: updatedAt ? `Updated ${new Date(updatedAt).toLocaleDateString()}` : 'Set in Dashboard',
@@ -95,6 +99,7 @@ export default function Dashboard() {
       description: 'Production ready',
     },
   ]
+
   return (
     <section id="dashboard" className="py-20 bg-gradient-to-br from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -110,7 +115,6 @@ export default function Dashboard() {
           </p>
         </motion.div>
 
-        {/* Metrics Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {metrics.map((metric, index) => (
             <motion.div
@@ -135,7 +139,6 @@ export default function Dashboard() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Technology Proficiency */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -148,7 +151,7 @@ export default function Dashboard() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900">Technology Proficiency</h3>
             </div>
-            
+
             <div className="space-y-4">
               {technologies.map((tech, index) => (
                 <motion.div
@@ -176,7 +179,6 @@ export default function Dashboard() {
             </div>
           </motion.div>
 
-          {/* Key Achievements */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -189,7 +191,7 @@ export default function Dashboard() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900">Key Achievements</h3>
             </div>
-            
+
             <div className="space-y-4">
               {achievements.map((achievement, index) => (
                 <motion.div
@@ -213,7 +215,6 @@ export default function Dashboard() {
             </div>
           </motion.div>
 
-          {/* Clients / Employers */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -234,7 +235,6 @@ export default function Dashboard() {
           </motion.div>
         </div>
 
-        {/* Professional Growth Chart */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -243,9 +243,8 @@ export default function Dashboard() {
         >
           <div className="text-center mb-8">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">Professional Growth Timeline</h3>
-          
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
@@ -266,4 +265,4 @@ export default function Dashboard() {
       </div>
     </section>
   )
-} 
+}

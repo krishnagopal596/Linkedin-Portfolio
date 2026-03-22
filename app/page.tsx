@@ -5,8 +5,6 @@ import Projects from '../components/Projects'
 import Skills from '../components/Skills'
 import Contact from '../components/Contact'
 
-export const revalidate = 0 // disable ISR for dev
-
 export default function Home() {
   return (
     <>
